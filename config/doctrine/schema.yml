@@ -1,0 +1,6 @@
+JelvixNews:
+  actAs: { Timestampable: ~ }
+  columns:
+    title:  { type: string(255), notnull: true }
+    logo:   { type: string(255) }
+    text:   {type: string }

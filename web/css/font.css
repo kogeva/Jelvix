@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Calibri; /* имя шрифта для CSS правил */
+    src: local("Calibri"), /* проверяем наличие шрифта в ОС пользователя */
+    url(/fonts/calibri.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+@font-face {
+    font-family: Patrick-Hand; /* имя шрифта для CSS правил */
+    src: local("Patrick-Hand"), /* проверяем наличие шрифта в ОС пользователя */
+    url(/fonts/PatrickHand-Regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+@font-face {
+    font-family: Caviar-Dreams; /* имя шрифта для CSS правил */
+    src: local("Caviar Dreams"), /* проверяем наличие шрифта в ОС пользователя */
+    url(/fonts/CaviarDreams.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+@font-face {
+    font-family: Bariol; /* имя шрифта для CSS правил */
+    src: local("Bariol"), /* проверяем наличие шрифта в ОС пользователя */
+    url(/fonts/bariol-regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
