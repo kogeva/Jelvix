@@ -23,6 +23,7 @@ body {
     -moz-box-shadow:0px 0px 20px 1px #393939;
     -webkit-box-shadow:0px 0px 20px 1px #393939;
     box-shadow:0px 0px 20px 1px #393939;
+    text-align: center;
 }
 .main-logo {
     background: url("/images/main-logo.png") no-repeat;
@@ -356,4 +357,217 @@ body {
 
 .copyriting-informations ul li:first-child {
     font-size: 18.5px;
+}
+
+/*****************Services**********************/
+
+.cervices-list-container {
+    float: left;
+    list-style: none;
+    padding: 0;
+}
+
+.cervices-list-container .services-list-element {
+    float: left;
+    margin-left: 18px;
+    width: 233px;
+}
+
+.services-list-element-container {
+    float: left;
+    list-style: none;
+    padding: 0;
+}
+
+.services-container {
+    float: left;
+    width: 100%;
+
+}
+
+.services-container .top-teeth-border-decorator {
+    float: left;
+    background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
+    height: 11px;
+    width: 100%;
+}
+
+.services-container .services-list-container {
+    float: left;
+    background: #e9e2e4;
+    width: 100%;
+}
+
+.services-container .bottom-teeth-border-decorator {
+    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
+    float: left;
+    height: 11px;
+    width: 100%;
+}
+
+.services-category-filter-buttons {
+    margin: 0 auto;
+    width: 560px;
+    list-style: none;
+}
+
+.services-category-filter-buttons .services-filter-button {
+    float: left;
+    margin: 30px 20px 0 0;
+    width: 120px;
+    height: 29px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.services-category-filter-buttons .services-filter-button:hover {
+    background: url("/images/services/services-sprites.png");
+    background-position: 1px 58px;
+}
+
+.services-category-filter-buttons .services-filter-button a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-top: 4px;
+    font-family: Calibri;
+    font-size: 20px;
+    outline: none;
+}
+
+.services-category-filter-buttons .architect {
+    background: url("/images/services/services-sprites.png");
+}
+
+.services-category-filter-buttons .design {
+    background: url("/images/services/services-sprites.png");
+    background-position: 1px 145px;
+}
+
+.services-category-filter-buttons .development {
+    background: url("/images/services/services-sprites.png");
+    background-position: 0px 116px;
+}
+
+.services-category-filter-buttons .grow {
+    background: url("/images/services/services-sprites.png");
+    background-position: 0px 87px;
+}
+
+.services-list-container .horizontal-line-container {
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+}
+
+.services-list-container .horizontal-line-container hr {
+    height: 0.5px;
+    width: 70%;
+    margin-top: 20px;
+    background: #5E5E5E;
+}
+
+.services-entity-container {
+    float: left;
+    width: 233px;
+}
+
+.services-entity-container .sevices-entity {
+    float: left;
+    cursor: pointer;
+}
+
+.services-entity-container .border-top {
+    float: left;
+    width: 233px;
+    height: 30px;
+}
+
+.services-entity-container .cervices-entity-body {
+    float: left;
+    width: 233px;
+}
+
+.services-entity-container .cervices-entity-head {
+    font-size: 21px;
+    margin: 15px;
+    color: #FFF;
+}
+
+.services-entity-container .entity-text {
+    float: left;
+    margin: 0 20px 15px 20px;
+    text-align: left;
+    font-family: Bariol;
+    font-size: 18px;
+}
+
+
+.services-entity-container .border-bottom {
+    float: left;
+    width: 233px;
+    height: 35px;
+}
+
+.category-architect-top {
+    background: url("/images/services/flag.png") no-repeat;
+    background-position: 0px 0px;
+}
+
+.category-architect-body {
+    background: url("/images/services/architect-body.png");
+    background-position: -2px -417px;
+}
+
+.category-architect-bottom {
+    background: url("/images/services/flag.png");
+    background-position: 0px 340px;
+
+}
+
+
+.category-design-top {
+    background: url("/images/services/flag.png");
+    background-position: 0px 210px;
+}
+
+.category-design-body {
+    background: url("/images/services/design-body.png");
+    background-position: -2px -417px;
+}
+
+.category-design-bottom {
+    background: url("/images/services/flag.png");
+    background-position: 0px 160px;
+}
+
+.category-development-top {
+    background: url("/images/services/flag.png");
+    background-position: 0px 303px;
+}
+
+.category-development-body {
+    background: url("/images/services/development-body.png");
+    background-position: -2px -417px;
+}
+
+.category-development-bottom {
+    background: url("/images/services/flag.png");
+    background-position: 0px 255px;
+}
+
+.category-grow-top {
+    background: url("/images/services/flag.png");
+    background-position: 0px 127px;
+}
+
+.category-grow-body {
+    background: url("/images/services/grow-body.png");
+    background-position: -2px -417px;
+}
+
+.category-grow-bottom {
+    background: url("/images/services/flag.png");
+    background-position: 0px 465px;
 }

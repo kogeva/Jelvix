@@ -1,0 +1,9 @@
+JelvixServicesCategory:
+  category1:
+    name: architect
+  category2:
+    name: design
+  category3:
+    name: development
+  category4:
+    name: grow

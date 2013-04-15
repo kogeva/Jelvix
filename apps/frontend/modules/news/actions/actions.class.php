@@ -13,8 +13,6 @@ class newsActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     $this->pager = new sfDoctrinePager('JelvixNews', 4);
-    $this->pager->setQuery(Doctrine_Core::getTable('JelvixNews')
-        ->createQuery('a'));
     $this->pager->setPage($request->getParameter('page', 1));
     $this->pager->init();
   }

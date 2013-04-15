@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [font.css, main.css]
 
-  javascripts:    []
+  javascripts:    [jquery-1.9.1.min.js]
 
   has_layout:     true
   layout:         layout

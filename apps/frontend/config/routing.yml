@@ -1,16 +1,41 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+jelvix_news:
+  url: /news
+  class: sfDoctrineRouteCollection
+  options:
+    model: JelvixNews
+    type: list
+    actions: [show, list]
+    module: news
+    prefix_path: /news
+
+jelvix_sevices:
+  url: /services
+  class: sfDoctrineRouteCollection
+  options:
+    model: JelvixServices
+    type: list
+    actions: [show, list]
+    module: services
+    prefix_path: /services
+
+jelvix_services_filte:
+  url: /services/filter-by-categoty
+  param: { module: services, action: showServicesByCategory }
+
+
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: services, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-default:
-  url:   /:module/:action/*
+#default_index:
+#  url:   /
+#  param: { action: index }
+#
+#default:
+#  url:   /:module/:action/*

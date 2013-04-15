@@ -2,9 +2,9 @@
     <div class="top-teeth-border-decorator"></div>
     <div class="news-list-container">
         <div class="latest-news">
-            <img class="left-header-line" src="/images/header-line.png" />
+            <img class="left-header-line" src="/images/header-line.png" alt=""/>
             <span>Latest News</span>
-            <img class="right-header-line" src="/images/header-line.png" />
+            <img class="right-header-line" src="/images/header-line.png" alt=""/>
         </div>
         <?php foreach ($pager->getResults() as $news):?>
             <div class="news">

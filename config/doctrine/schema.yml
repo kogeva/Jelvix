@@ -1,6 +1,27 @@
 JelvixNews:
-  actAs: { Timestampable: ~ }
+  actAs:    { Timestampable: ~ }
   columns:
     title:  { type: string(255), notnull: true }
     logo:   { type: string(255) }
     text:   {type: string }
+
+JelvixServices:
+  actAs:         { Timestampable: ~ }
+  columns:
+    category_id: { type: integer, notnull: true }
+    title:       { type: string(255), notnull: true }
+    text:        {type: string }
+  relations:
+    JelvixServicesCategory:
+      class: JelvixServicesCategory
+      local: category_id
+      foreign: id
+      foreignAlias: JelvixServices
+      foreignType: many
+      type: one
+      onDelete: CASCADE
+
+JelvixServicesCategory:
+  actAs:  { Timestampable: ~ }
+  columns:
+    name: { type: string(128), notnull: true }

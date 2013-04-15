@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="wrap">
-            <div class="container" align="center">
+            <div class="container">
                 <div class="header">
                     <div class="main-logo"></div>
                     <div class="logo-vertical-line" ></div>
@@ -18,7 +18,7 @@
                         <div class="request-phone-conteiner">1234567XXX</div>
                         <div class="request-button-container">
                             <a class="request-button" href="#">
-                                <img class="request-button-image" src="/images/request-button-arrow.png"/>
+                                <img class="request-button-image" src="/images/request-button-arrow.png" alt="Request a quote"/>
                                 <span>Request a quote</span>
                             </a>
                         </div>
@@ -79,7 +79,7 @@
                     <div class="header-request-container">
                         <div class="request-button-container">
                             <a class="request-button" href="#">
-                                <img class="request-button-image" src="/images/request-button-arrow.png"/>
+                                <img class="request-button-image" src="/images/request-button-arrow.png" alt="Request a quote"/>
                                 <span>Request a quote</span>
                             </a>
                         </div>
