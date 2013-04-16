@@ -39,19 +39,19 @@
             $($mainText).addClass('deployed').html(sourceText);
     });
 
-    $('.services-category-filter-buttons .architect').one('click', function() {
+    $('.services-category-filter-buttons .architect').bind('click', function() {
         $('.load-data-container').load('/services/filter-by-categoty?name=architect');
     });
 
-    $('.services-category-filter-buttons .design').one('click', function() {
+    $('.services-category-filter-buttons .design').bind('click', function() {
         $('.load-data-container').load('/services/filter-by-categoty?name=design');
     });
 
-    $('.services-category-filter-buttons .development').one('click', function() {
+    $('.services-category-filter-buttons .development').bind('click', function() {
         $('.load-data-container').load('/services/filter-by-categoty?name=development');
     });
 
-    $('.services-category-filter-buttons .grow').one('click', function() {
+    $('.services-category-filter-buttons .grow').bind('click', function() {
         $('.load-data-container').load('/services/filter-by-categoty?name=grow');
     });
 </script>
