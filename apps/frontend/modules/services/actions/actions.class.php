@@ -23,7 +23,6 @@ class servicesActions extends sfActions
       $this->category = Doctrine_Core::getTable('JelvixServicesCategory')->findOneByName($catName);
       $this->services = $this->category->getJelvixServices();
       $this->services = $this->buildDataForFlasgs($this->services->getData());
-      //var_dump($this->services) or die;
       $this->setLayout(false);
   }
 

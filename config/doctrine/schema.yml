@@ -25,3 +25,29 @@ JelvixServicesCategory:
   actAs:  { Timestampable: ~ }
   columns:
     name: { type: string(128), notnull: true }
+
+JelvixProjects:
+  actAs:  { Timestampable: ~ }
+  columns:
+    category_id:  { type: integer, notnull: true }
+    title:        { type: string(255), notnull: true }
+    thumbnail:    { type: string(255) }
+    photo:        { type: string(255) }
+    description:  { type: clob(16777215) }
+    ios_link:     { type: string(255) }
+    android_link: { type: string(255) }
+    other_link:   { type: string(255) }
+  relations:
+      JelvixServicesCategory:
+        class: JelvixProjectCategory
+        local: category_id
+        foreign: id
+        foreignAlias: JelvixProjects
+        foreignType: many
+        type: one
+        onDelete: CASCADE
+
+JelvixProjectCategory:
+  actAs:  { Timestampable: ~ }
+  columns:
+      name:       { type: string(255), notnull: true }

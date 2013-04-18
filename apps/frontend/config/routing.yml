@@ -25,6 +25,16 @@ jelvix_services_filte:
   url: /services/filter-by-categoty
   param: { module: services, action: showServicesByCategory }
 
+jelvix_projects:
+  url: /projects
+  class: sfDoctrineRouteCollection
+  options:
+    model: JelvixProjects
+    type: list
+    actions: [show, list]
+    module: projects
+    prefix_path: /projects
+
 
 # default rules
 homepage:
