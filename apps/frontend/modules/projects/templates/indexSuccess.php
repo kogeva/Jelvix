@@ -18,7 +18,23 @@
         <div class="horizontal-line-container">
             <hr>
         </div>
-        <div style="float: left; width: 100%">
+        <div class="projects-content-container" style="float: left; width: 100%">
+<!--            <ul class="slider">-->
+<!--                --><?php //foreach($projects as $page): ?>
+<!--                <li class="slider-element">-->
+<!--                    <ul class="project-list-page">-->
+<!--                        --><?php //foreach($page as $project): ?>
+<!--                        <li class="project-list-element">-->
+<!--                            <div class="project-shadow">-->
+<!--                                <img src="--><?php //echo $project->getThumbnail() ?><!--" width="260" height="260" alt="" />-->
+<!--                                <a class="boroda"></a>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        --><?php //endforeach; ?>
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                --><?php //endforeach;?>
+<!--            </ul>-->
             <div id="slides">
                 <?php foreach($projects as $page): ?>
                 <div class="slide-page">
@@ -31,14 +47,6 @@
                             </div>
                         </li>
                         <?php endforeach; ?>
-<!--                        <li class="project-list-element"><img src="http://interesno-tyt.ru/uploads/posts/2012-02/1329557430_videohive-after-effects-project-about-me.jpg" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://wizardry.ua/portfolio/web/bal_2007/bal.jpg" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://www.vipdesign.com.ua/pic/portfolio/5/main.jpg" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://devoler.com.ua/img/portfolio/maxa/website.jpg" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://www.oszone.net/figs/u/316767/121103202739/android-market.jpg" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://www.roundpulse.com/wp-content/uploads/2012/12/top_android_application_development_companies.jpg" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://aonehiphop.ru/media/photo/preview/preview_main_c5248dbf0633f1ec5d29ca09040d7b3e.png.499x326_q85_box-86,210,722,560_crop.png" width="260" height="260" alt=""></li>-->
-<!--                        <li class="project-list-element"><img src="http://aonehiphop.ru/media/photo/preview/preview_main_c5248dbf0633f1ec5d29ca09040d7b3e.png.499x326_q85_box-86,210,722,560_crop.png" width="260" height="260" alt=""></li>-->
                     </ul>
                 </div>
                 <?php endforeach;?>
@@ -47,6 +55,9 @@
     </div>
     <div class="bottom-teeth-border-decorator"></div>
 </div>
+<!--<script type="text/javascript">-->
+<!--    $('.slider').boxSlider({ slideWidth : 980, adaptiveHeight: true });-->
+<!--</script>-->
 <script type="text/javascript">
 
     function currentSlide( current ) {

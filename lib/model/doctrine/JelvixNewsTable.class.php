@@ -16,4 +16,15 @@ class JelvixNewsTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('JelvixNews');
     }
+
+    public static function getLastFiveNews()
+    {
+        $query = Doctrine_Query::create()
+            ->select()
+            ->from('JelvixNews jn')
+            ->addOrderBy('jn.id DESC')
+            ->limit(5);
+
+        return $query->execute();
+    }
 }

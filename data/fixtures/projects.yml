@@ -2,6 +2,12 @@ JelvixProjects:
 <?php for($i = 0; $i < 30; $i++): ?>
   project<?php echo $i ?>:
     category_id: <?php echo rand(1, 3); ?>
-    title: Application example
+    title: Clean Plates allows you to quickly
     thumbnail: http://matts2012journey.files.wordpress.com/2012/02/simple.jpg
+    photo: /images/projects/proj-image.png
+    description: 'Clean Plates allows you to quickly and easily find the healthiest restaurant nearby. You can browse our database of dining options for organic meats, vegan and vegetarian op picks, gluten-free options, and naturally sweetened desserts. Match your eating preferences with special settings for date night, meetings, fast/affordable food, and more! -- Read full professional reviews from Clean Plates -- Simple searching and sorting works offline -- Automatic updates show recently reviewed restaurants under "What's New"'
+    ios_link: https://itunes.apple.com/us/app/facebook-messenger/id454638411?mt=8
+    android_link: https://play.google.com/store/apps/details?id=com.facebook.orca
+    other_link: biplix.com
+
 <?php endfor; ?>

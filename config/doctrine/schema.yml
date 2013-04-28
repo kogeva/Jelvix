@@ -51,3 +51,20 @@ JelvixProjectCategory:
   actAs:  { Timestampable: ~ }
   columns:
       name:       { type: string(255), notnull: true }
+
+ProjectReview:
+  actAs:  { Timestampable: ~ }
+  columns:
+    project_id:   { type: integer }
+    author:       { type: string, notnull: true }
+    author_photo: { type: string(255) }
+    text:         { type: string, notnull: true }
+  relations:
+    JelvixProjects:
+      class: JelvixProjects
+      local: project_id
+      foreign: id
+      foreignAlias: JelvixReview
+      foreignType: many
+      type: one
+      onDelete: CASCADE

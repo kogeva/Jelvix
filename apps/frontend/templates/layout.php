@@ -25,11 +25,11 @@
                     </div>
                     <div class="header-menu-container">
                         <ul class="header-menu-list">
-                            <li class="header-menu-list-element"><a href="#">about</a></li>
-                            <li class="header-menu-list-element"><a href="#">services</a></li>
-                            <li class="header-menu-list-element"><a href="#">projects</a></li>
+                            <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_about')?>">about</a></li>
+                            <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_sevices')?>">services</a></li>
+                            <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_projects')?>">projects</a></li>
                             <li class="header-menu-list-element"><a href="#">stories</a></li>
-                            <li class="header-menu-list-element"><a href="news">news</a></li>
+                            <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_news')?>">news</a></li>
                             <li class="header-menu-list-element"><a href="#">contacts</a></li>
                         </ul>
                     </div>

@@ -1,13 +1,13 @@
 @font-face {
     font-family: Calibri; /* имя шрифта для CSS правил */
     src: local("Calibri"), /* проверяем наличие шрифта в ОС пользователя */
-    url(/fonts/calibri.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    url(/fonts/calibri.otf) format('opentype'); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
 
 @font-face {
-    font-family: Patrick-Hand; /* имя шрифта для CSS правил */
-    src: local("Patrick-Hand"), /* проверяем наличие шрифта в ОС пользователя */
-    url(/fonts/PatrickHand-Regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: 'Patrick-Hand';
+    font-style: normal;
+    src: local('Patrick Hand'), local('PatrickHand-Regular'), url(http://themes.googleusercontent.com/static/fonts/patrickhand/v7/9BG3JJgt_HlF3NpEUehL0HhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
 
 @font-face {

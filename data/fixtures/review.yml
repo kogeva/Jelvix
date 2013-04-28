@@ -1,0 +1,26 @@
+ProjectReview:
+  review1:
+    project_id: <?php echo rand(27, 29); ?>
+    author:  Yusov K.
+    author_photo: http://cs313329.vk.me/v313329566/3fd/9Zj1yAj30c8.jpg
+    text: Working with Jelvix was so easy and convenient. It made the process of getting my website up and going simple and affordable!! Great service!!!
+  review2:
+    project_id: <?php echo rand(27, 29); ?>
+    author:  Yusov K.
+    author_photo: http://cs313329.vk.me/v313329566/3fd/9Zj1yAj30c8.jpg
+    text: Working with Jelvix was so easy and convenient. It made the process of getting my website up and going simple and affordable!! Great service!!!
+  review3:
+    project_id: <?php echo rand(27, 29); ?>
+    author: Yusov K.
+    author_photo: http://cs313329.vk.me/v313329566/3fd/9Zj1yAj30c8.jpg
+    text: Working with Jelvix was so easy and convenient. It made the process of getting my website up and going simple and affordable!! Great service!!!
+  review4:
+    project_id: <?php echo rand(27, 29); ?>
+    author: Yusov K.
+    author_photo: http://cs313329.vk.me/v313329566/3fd/9Zj1yAj30c8.jpg
+    text: Working with Jelvix was so easy and convenient. It made the process of getting my website up and going simple and affordable!! Great service!!!
+  review5:
+    project_id: <?php echo rand(27, 29); ?>
+    author: Yusov K.
+    author_photo: http://cs313329.vk.me/v313329566/3fd/9Zj1yAj30c8.jpg
+    text: Working with Jelvix was so easy and convenient. It made the process of getting my website up and going simple and affordable!! Great service!!!

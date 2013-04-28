@@ -35,11 +35,19 @@ jelvix_projects:
     module: projects
     prefix_path: /projects
 
+jelvix_about:
+  url: /about
+  param: { module: about, action: index }
+
+jelvix_contacts:
+  url: /contacts
+  param: { module: contacts, action: index }
+
 
 # default rules
 homepage:
   url:   /
-  param: { module: services, action: index }
+  param: { module: main, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
