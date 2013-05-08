@@ -1,3 +1,12 @@
+function checkCurrentMenuElement()
+{
+
+    $('.header-menu-list-element a').each(function() {
+        if($(this).attr('href') == document.location.pathname)
+            $(this).parent().css({'border-bottom' : '1px dashed #fff'});
+    });
+}
+
 function initServicesEntity()
 {
     $('.sevices-entity').on('click', function () {
@@ -28,6 +37,7 @@ function initServicesEntity()
 
 $(document).ready(function() {
 
+    checkCurrentMenuElement();
     initServicesEntity();
 
     $('.services-filter-button').bind('mousedown', function() {
