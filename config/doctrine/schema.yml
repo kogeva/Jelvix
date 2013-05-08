@@ -68,3 +68,20 @@ ProjectReview:
       foreignType: many
       type: one
       onDelete: CASCADE
+
+JelvixContacts:
+  actAs:  { Timestampable: ~ }
+  columns:
+    name: { type: string(250), notnull: true }
+    email_address: { type: string(250), notnull: true }
+    subject: { type: string(250), notnull: true }
+    message: { type: text, notnull: true }
+
+JelvixRequest:
+  actAs:  { Timestampable: ~ }
+  columns:
+    name: { type: string(250), notnull: true }
+    email_address: { type: string(250), notnull: true }
+    phone: { type: string(255), notnull: true }
+    company: { type: string(250), notnull: true }
+    message: { type: text }

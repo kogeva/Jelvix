@@ -21,7 +21,7 @@ jelvix_sevices:
     module: services
     prefix_path: /services
 
-jelvix_services_filte:
+jelvix_services_filter:
   url: /services/filter-by-categoty
   param: { module: services, action: showServicesByCategory }
 
@@ -35,13 +35,33 @@ jelvix_projects:
     module: projects
     prefix_path: /projects
 
+jelvix_projects_filter:
+  url: /projects/filter-by-categoty
+  param: { module: projects, action: showListByCategoty }
+
 jelvix_about:
   url: /about
   param: { module: about, action: index }
 
 jelvix_contacts:
   url: /contacts
-  param: { module: contacts, action: index }
+  class: sfDoctrineRouteCollection
+  options:
+    model: JelvixContacts
+    type: new
+    actions: [new, create]
+    module: contacts
+    prefix_path: /contacts
+
+jelvix_request:
+  url: /request
+  class: sfDoctrineRouteCollection
+  options:
+    model: JelvixRequest
+    type: new
+    actions: [new, create]
+    module: request
+    prefix_path: /request
 
 
 # default rules

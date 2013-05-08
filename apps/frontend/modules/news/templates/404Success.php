@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>404</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
@@ -14,6 +14,7 @@
         <div class="head-404">
             << Not all those who wander are lost.>>
         </div>
+        <div class="tollden">-J.R.R Tollden</div>
         <div class="head-404">
             ...but you are
         </div>

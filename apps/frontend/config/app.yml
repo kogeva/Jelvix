@@ -3,3 +3,13 @@
 
 # default values
 #all:
+
+all:
+  mails:
+    contact:
+      - kogeva19898@gmail.com
+      - vovan5@yandex.ru
+    request:
+      - kogeva19898@gmail.com
+      - vovan5@yandex.ru
+

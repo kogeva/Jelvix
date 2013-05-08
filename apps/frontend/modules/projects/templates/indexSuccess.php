@@ -8,33 +8,17 @@
             <li class="applications button">
                 <a href="#">Applications</a>
             </li>
-            <li class="others button">
-                <a href="#">Other</a>
+            <li class="design button">
+                <a href="#">Design</a>
             </li>
-            <li class="other button">
-                <a href="#">Other</a>
+            <li class="featured button">
+                <a href="#">Featured</a>
             </li>
         </ul>
         <div class="horizontal-line-container">
             <hr>
         </div>
         <div class="projects-content-container" style="float: left; width: 100%">
-<!--            <ul class="slider">-->
-<!--                --><?php //foreach($projects as $page): ?>
-<!--                <li class="slider-element">-->
-<!--                    <ul class="project-list-page">-->
-<!--                        --><?php //foreach($page as $project): ?>
-<!--                        <li class="project-list-element">-->
-<!--                            <div class="project-shadow">-->
-<!--                                <img src="--><?php //echo $project->getThumbnail() ?><!--" width="260" height="260" alt="" />-->
-<!--                                <a class="boroda"></a>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        --><?php //endforeach; ?>
-<!--                    </ul>-->
-<!--                </li>-->
-<!--                --><?php //endforeach;?>
-<!--            </ul>-->
             <div id="slides">
                 <?php foreach($projects as $page): ?>
                 <div class="slide-page">
@@ -43,7 +27,7 @@
                         <li class="project-list-element">
                             <div class="project-shadow">
                                 <img src="<?php echo $project->getThumbnail() ?>" width="260" height="260" alt="" />
-                                <a class="boroda"></a>
+                                <a href="<?php echo url_for2('jelvix_projects_show', array( 'id' => $project->getId())) ?>" class="project-link"><span><?php echo $project->getTitle() ?></span></a>
                             </div>
                         </li>
                         <?php endforeach; ?>
@@ -55,9 +39,6 @@
     </div>
     <div class="bottom-teeth-border-decorator"></div>
 </div>
-<!--<script type="text/javascript">-->
-<!--    $('.slider').boxSlider({ slideWidth : 980, adaptiveHeight: true });-->
-<!--</script>-->
 <script type="text/javascript">
 
     function currentSlide( current ) {
@@ -71,7 +52,7 @@
         else
             $('.slidesNext').removeClass('sliderButtonNext').attr('href', '#');
     }
-//
+
     $(function(){
         $("#slides").slides({
             width: 990,
@@ -89,4 +70,6 @@
 
         currentSlide( 1 );
     });
+
+
 </script>

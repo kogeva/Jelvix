@@ -16,6 +16,14 @@ class projectsActions extends sfActions
         $this->projects = $this->arrayChunk($this->projects->getData());
     }
 
+    public function  executeShowListByCategoty(sfWebRequest $request)
+    {
+        $category = $request->getParameter('category');
+        $this->projectCategory = Doctrine_Core::getTable('JelvixProjectCategory')->findByName($category);
+        $this->projects = $this->projectCategory->get(0)->getJelvixProjects()->getData();
+        $this->projects = $this->arrayChunk($this->projects);
+    }
+
     public function executeShow(sfWebRequest $request)
     {
         $this->project = $this->getRoute()->getObject();

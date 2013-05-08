@@ -3,7 +3,16 @@
     <div class="main-about-container">
         <div class="about-left-container">
             <div class="content-container">
-                <img class="top-image" src="/images/about/inov-jelvix.png" alt="">
+                <div class="top-image" >
+                    <div class="text">JELVIX IS INNOVATIONAL FAST GROWING
+                     COMPANY IN  SOFTWARE DEVELOPMENT
+                     PROVIDING     PROFESIONAL    SERVICES
+                     AROUND  THE  WORLD.<br>
+                     We  are  founded  in 2010  with  a  headquarters  in  Israel
+                and  Ukraine. Our  specialization is complex  sophisticated
+                projects and mobile applications.
+                     </div>
+                </div>
                 <div class="about-header">
                     <div class="text">Why choose us or you key advantages:</div>
                     <div class="header-decorator"></div>
