@@ -12,7 +12,14 @@ class projectsActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-        $this->projects = $this->getRoute()->getObjects();
+        $category = $request->getParameter('category', false);
+        if(!$category)
+            $this->projects = $this->getRoute()->getObjects();
+        else
+        {
+            $this->projectCategory = Doctrine_Core::getTable('JelvixProjectCategory')->findByName($category);
+            $this->projects = $this->projectCategory->get(0)->getJelvixProjects();
+        }
         $this->projects = $this->arrayChunk($this->projects->getData());
     }
 

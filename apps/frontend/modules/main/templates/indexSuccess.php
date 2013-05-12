@@ -56,5 +56,11 @@
     </div>
 </div>
 <script type="text/javascript">
-    $('.main-slider').bxSlider({ slideWidth : 980, adaptiveHeight: true });
+    $('.main-slider').bxSlider({
+        slideWidth : 980,
+        adaptiveHeight: true,
+        speed: 2000,
+        auto: true,
+        pause: 8000
+    });
 </script>
