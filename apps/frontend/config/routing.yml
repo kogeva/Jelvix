@@ -63,6 +63,16 @@ jelvix_request:
     module: request
     prefix_path: /request
 
+jelvix_stories:
+  url: /stories
+  class: sfDoctrineRouteCollection
+  options:
+    model: JelvixStories
+    type: list
+    action: list
+    module: stories
+    prefix_path: /stories
+
 
 # default rules
 homepage:

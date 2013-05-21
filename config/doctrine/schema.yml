@@ -85,3 +85,11 @@ JelvixRequest:
     phone: { type: string(255), notnull: true }
     company: { type: string(250), notnull: true }
     message: { type: text }
+
+JelvixStories:
+  actAs:  { Timestampable: ~ }
+  columns:
+    author:   { type: string(250), notnull: true }
+    photo:    { type: string(250), notnull: true }
+    position: { type: string(250), notnull: true }
+    text:     { type: text, notnull: true }

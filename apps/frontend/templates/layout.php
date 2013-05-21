@@ -20,7 +20,6 @@
                 <div class="request-phone-conteiner">1234567XXX</div>
                 <div class="request-button-container">
                     <a class="request-button" href="<?php echo url_for('jelvix_request_new')?>">
-                        <img class="request-button-image" src="/images/request-button-arrow.png" alt="Request a quote"/>
                         <span>Request a quote</span>
                     </a>
                 </div>
@@ -32,7 +31,7 @@
                     </li>
                     <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_projects') ?>">projects</a>
                     </li>
-                    <li class="header-menu-list-element"><a href="#">stories</a></li>
+                    <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_stories') ?>">stories</a></li>
                     <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_news') ?>">news</a></li>
                     <li class="header-menu-list-element"><a
                             href="<?php echo url_for('jelvix_contacts_new') ?>">contacts</a></li>
@@ -84,7 +83,6 @@
             <div class="header-request-container">
                 <div class="request-button-container">
                     <a class="request-button" href="<?php echo url_for('jelvix_request_new')?>">
-                        <img class="request-button-image" src="/images/request-button-arrow.png" alt="Request a quote"/>
                         <span>Request a quote</span>
                     </a>
                 </div>

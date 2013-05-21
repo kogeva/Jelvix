@@ -68,5 +68,5 @@
             </ul>
         </div>
     </div>
-    <div class="bottom-teeth-border-decorator"></div>
+   c
 </div>

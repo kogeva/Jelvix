@@ -1,0 +1,8 @@
+JelvixStories:
+<?php for($i=0;$i <= 10; $i++):?>
+  story<?php echo $i?>:
+    author:  Gary Clopet
+    photo: /images/stories/example.png
+    position:  Founder & Director, Global Scenic Care
+    text: Awesome job!! Everyday I'm more impressed then the next. Jelvix team think through the job thoroughly and design real neat stuff. They're able to take concept and deliver a finished product. Besides for all the major programming that they know how to do, they are great at even the minor details that some others might overlook.
+<?php endfor?>

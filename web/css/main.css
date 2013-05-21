@@ -1,12 +1,4 @@
 body {
-    background: url("/images/texture_jelvix.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /*background-size: 100% 100%;*/
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-
 }
 .wrap {
     margin: 0 auto;
@@ -16,7 +8,7 @@ body {
 
 .container {
     margin: 25px 5px 25px 5px;
-    background: url("/images/background-main-container.png");
+    background: rgba(0, 0, 0, 0.63);
     width: 100%;
     float: left;
     border-radius: 20px;
@@ -65,33 +57,25 @@ body {
     padding: 10px 0 0 55px;
 }
 
-.request-button-container {
-    
-}
 .request-button {
-    background: url("/images/request-button-background.png") repeat-x;
+    background: url("/images/request_buttons.png");
     float: left;
     color: white;
-    width: 205px;
-    height: 50px;
+    width: 213px;
+    height: 60px;
     outline: none;
     text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 .request-button:hover {
-    background: url("/images/request-button-background-hover.png") repeat-x;
+    background: url("/images/request_buttons.png");
+    background-position: -1px -62px;
 }
 
 .request-button span {
     float: left;
     margin-top: 15px;
+    margin-left: 55px;
     font-size: 20px;
     font-family: Calibri, Arial;
 }
@@ -124,7 +108,7 @@ body {
     text-decoration: none;
     color: white;
     outline: none;
-    font-family: Caviar-Dreams;
+    font-family: "Caviar-Dreams";
     font-size: 25px;
     padding: 0 5px 0 5px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
@@ -364,7 +348,7 @@ body {
 
 .footer-list li {
     color: #fff;
-    font-family: Caviar-Dreams;
+    font-family: "Caviar-Dreams";
     font-size: 22px;
 }
 
@@ -474,7 +458,7 @@ body {
 .services-container .top-teeth-border-decorator {
     float: left;
     background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
@@ -487,7 +471,7 @@ body {
 .services-container .bottom-teeth-border-decorator {
     background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
@@ -743,7 +727,7 @@ body {
 .projects-container .top-teeth-border-decorator {
     float: left;
     background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
@@ -757,7 +741,7 @@ width: 100%;
 .projects-container .bottom-teeth-border-decorator {
     background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
@@ -1047,7 +1031,7 @@ width: 100%;
     float: left;
     background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
     background-position: 0px -1px;
-    height: 9px;
+    height: 18px;
     width: 100%;
 }
 
@@ -1055,7 +1039,7 @@ width: 100%;
     background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     background-position: 0px -1px;
     float: left;
-    height: 9px;
+    height: 18px;
     width: 100%;
 }
 
@@ -1390,7 +1374,7 @@ width: 100%;
 
 .main-page-container .bottom-container {
     position: relative;
-    top: -11px;
+    top: -16px;
     width: 100%;
     float: left;
 }
@@ -1398,14 +1382,14 @@ width: 100%;
 .main-page-container .top-teeth-border-decorator {
     float: left;
     background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
 .main-page-container .bottom-teeth-border-decorator {
     background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
@@ -1569,14 +1553,14 @@ width: 100%;
 .contacts-main-container .top-teeth-border-decorator {
     float: left;
     background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
 .contacts-main-container .bottom-teeth-border-decorator {
     background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 11px;
+    height: 18px;
     width: 100%;
 }
 
@@ -1768,4 +1752,146 @@ width: 100%;
     width: 100%;
     text-align: left;
     color: #F00;
+}
+
+/*************stories***************/
+
+.stories-main-container {
+    float: left;
+    width: 100%;
+}
+
+.stories-main-container .top-teeth-border-decorator {
+    float: left;
+        background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
+    height: 18px;
+    width: 100%;
+}
+
+.stories-main-container .bottom-teeth-border-decorator {
+    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
+    float: left;
+    height: 18px;
+    width: 100%;
+}
+
+.stories-container {
+    float: left;
+    width: 100%;
+    background: #E9E2E4;
+}
+
+.stories-slider-container {
+    margin: 0 auto;
+    width: 980px;
+}
+
+.stories-slider {
+    padding: 0;
+    list-style: none;
+}
+
+.stories-slide {
+    float: left;
+    width: 980px;
+}
+
+.hr {
+    margin: 0 auto;
+    border-top: 1px solid #5d5a5b;
+    border-bottom: 2px solid #fff;
+    width: 970px;
+}
+
+.stories {
+    float: left;
+    padding: 0;
+    list-style: none;
+    width: 400px;
+}
+
+.stories-item {
+    float: left;
+    width: 400px;
+    margin: 10px 0 20px 30px;
+}
+
+.stories-text-container {
+    float: left;
+    background: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    width: 400px;
+    padding: 10px;
+    font-family: Bariol;
+    text-align: left;
+}
+
+.stories-text-container .text {
+    margin-left: 10px;
+    font-style: italic;
+    float: left;
+}
+
+.stories-text-container .author {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    color: #6ac3f7;
+    font-size: 22px;
+}
+
+.stories-text-container .position {
+    float: left;
+    margin-top: 5px;
+}
+.circles-decorator {
+    float: left;
+    background: url('/images/stories/stories-circles-background.png');
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 65px;
+}
+
+.stories-container .author-photo {
+    float: left;
+    border: 3px solid #fff;
+    margin: 25px 15px 0px 30px;
+    -webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+}
+
+.quotes {
+    font-family: Bariol;
+    font-size: 40px;
+    line-height: 1px;
+}
+
+.quotes.top {
+    margin: 15px 5px 0px -14px;
+    float: left;
+}
+
+.stories-right {
+    float: left;
+    padding: 0;
+    margin-left: 110px;
+    list-style: none;
+    width: 400px;
+}
+
+.stories-right .circles-decorator {
+    float: left;
+    margin-left: 130px;
+    background: url('/images/stories/stories-circles-right-background.png');
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 65px;
+}
+
+.stories-right .author-photo {
+    margin: 25px 15px 0px 15px;
 }
