@@ -25,10 +25,10 @@ class JelvixContactsForm extends BaseJelvixContactsForm
 
       $this->setValidators(array(
           'id'            => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-          'name'          => new sfValidatorString(array('max_length' => 250)),
+          'name'          => new sfValidatorString(array('min_length' => 3, 'max_length' => 250)),
           'email_address' => new sfValidatorEmail(array('max_length' => 250)),
-          'subject'       => new sfValidatorString(array('max_length' => 250)),
-          'message'       => new sfValidatorString(),
+          'subject'       => new sfValidatorString(array('min_length' => 2, 'max_length' => 250)),
+          'message'       => new sfValidatorString(array('min_length' => 10)),
           'created_at'    => new sfValidatorDateTime(),
           'updated_at'    => new sfValidatorDateTime(),
       ));

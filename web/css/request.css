@@ -1,28 +1,32 @@
 body {
-    background: url("/images/texture_jelvix.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-
+    margin: 0;
 }
 
 .wrap {
+    float: left;
+    width: 100%;
+    background: url("/images/texture_jelvix.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.main {
     margin: 0 auto;
-    min-width: 1024px;
-    max-width: 1024px;
+    width: 1024px;
 }
 
 .container {
-    margin: 25px 5px 25px 5px;
-    background: url("/images/background-main-container.png");
+    margin: 25px 0px 25px 0px;
+    background: rgba(0, 0, 0, 0.63);
     width: 100%;
     float: left;
     border-radius: 20px;
-    -moz-box-shadow: 0px 0px 20px 1px #393939;
-    -webkit-box-shadow: 0px 0px 20px 1px #393939;
-    box-shadow: 0px 0px 20px 1px #393939;
+    -moz-box-shadow:0px 0px 20px 1px #393939;
+    -webkit-box-shadow:0px 0px 20px 1px #393939;
+    box-shadow:0px 0px 20px 1px #393939;
     text-align: center;
 }
 
@@ -334,6 +338,7 @@ body {
 }
 
 .bottom-form-container button {
+    cursor: pointer;
     background: url('/images/request/request-sprites.png');
     background-position: 0px -182px;
     background-repeat: no-repeat;

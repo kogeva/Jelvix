@@ -16,6 +16,8 @@ generator:
       fields:  ~
       list:
         layout: tabular
+        display: [title, text, created_at]
+        max_per_page: 10]
       filter:  ~
       form:    ~
       edit:    ~

@@ -1,13 +1,24 @@
 body {
+    margin: 0;
+    /*zoom: 95%;*/
 }
 .wrap {
+    float: left;
+    width: 100%;
+    background: url("/images/texture_jelvix.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.main {
     margin: 0 auto;
-    min-width: 1024px;
-    max-width: 1024px;
+    width: 1024px;
 }
 
 .container {
-    margin: 25px 5px 25px 5px;
+    margin: 25px 0px 25px 0px;
     background: rgba(0, 0, 0, 0.63);
     width: 100%;
     float: left;
@@ -120,6 +131,7 @@ body {
 
 .header-menu-list-element a:hover {
     background: #76e5c1;
+    color: #000;
 }
 /*************************************************************/
 
@@ -135,14 +147,14 @@ body {
     width: 100%;
 }
 
-.top-teeth-border-decorator {
+.news-container .top-teeth-border-decorator {
     background: url("/images/top-teeth-border-decorator.png") repeat-x;
     float: left;
     height: 11px;
     width: 100%;
 }
 
-.bottom-teeth-border-decorator {
+.news-container .bottom-teeth-border-decorator {
     background: url("/images/bottom-teeth-border-decorator.png") repeat-x;
     float: left;
     height: 11px;
@@ -384,11 +396,11 @@ body {
 }
 
 .copyriting-informations ul li:first-child {
-    font-size: 18.5px;
+    font-size: 17.5px;
 }
 
 .copyriting-informations ul li:last-child {
-    line-height: 34px;
+    line-height: 24px;
     font-size: 15px;
 }
 
@@ -455,11 +467,13 @@ body {
 
 }
 
-.services-container .top-teeth-border-decorator {
+.top-teeth-border-decorator {
     float: left;
     background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
     height: 18px;
     width: 100%;
+    position: relative;
+    top: 1px;
 }
 
 .services-container .services-list-container {
@@ -468,11 +482,13 @@ body {
     width: 100%;
 }
 
-.services-container .bottom-teeth-border-decorator {
+.bottom-teeth-border-decorator {
     background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     float: left;
     height: 18px;
     width: 100%;
+    position: relative;
+    top: -1px;
 }
 
 .services-category-filter-buttons {
@@ -561,7 +577,7 @@ body {
 
 .services-entity-container .cervices-entity-body {
     float: left;
-    width: 233px;
+    width: 230px;
 }
 
 .services-entity-container .cervices-entity-head {
@@ -592,7 +608,7 @@ body {
 }
 
 .category-architect-body {
-    background: url("/images/services/architect-background.png");
+    background: url("/images/services/flags-center.png");
 }
 
 .category-architect-bottom {
@@ -608,7 +624,7 @@ body {
 }
 
 .category-architect-body.hover {
-    background: url("/images/services/architect-background-hover.png");
+    background-position: -928px 0;
 }
 
 .category-architect-bottom.hover {
@@ -624,8 +640,8 @@ body {
 }
 
 .category-design-body {
-    background: url("/images/services/design-background.png");
-    background-position: 0px -417px;
+    background: url("/images/services/flags-center.png");
+    background-position: -465.5px 0;
 }
 
 .category-design-bottom {
@@ -640,8 +656,7 @@ body {
 }
 
 .category-design-body.hover {
-    background: url("/images/services/design-background-hover.png");
-    background-position: 0px -417px;
+    background-position: -1395px 0;
 }
 
 .category-design-bottom.hover {
@@ -656,8 +671,8 @@ body {
 }
 
 .category-development-body {
-    background: url("/images/services/development-background.png");
-    background-position: 0px -417px;
+    background: url("/images/services/flags-center.png");
+    background-position: -233px 0px;
 }
 
 .category-development-bottom {
@@ -673,8 +688,7 @@ body {
 }
 
 .category-development-body.hover {
-    background: url("/images/services/development-background-hover.png");
-    background-position: 0px -417px;
+    background-position: 703px 0px;
 }
 
 .category-development-bottom.hover {
@@ -690,8 +704,8 @@ body {
 }
 
 .category-grow-body {
-    background: url("/images/services/grow-background.png");
-    background-position: 0px -417px;
+    background: url("/images/services/flags-center.png");
+    background-position: 1169px 0px;
 }
 
 .category-grow-bottom {
@@ -702,13 +716,11 @@ body {
 /*hover grow*/
 
 .category-grow-top.hover {
-    background: url("/images/services/flags.png");
     background-position: 0px -598px;
 }
 
 .category-grow-body.hover {
-    background: url("/images/services/grow-background-hover.png");
-    background-position: 0px -417px;
+    background-position: -1631px 0px;
 }
 
 .category-grow-bottom.hover {
@@ -724,24 +736,9 @@ body {
     width: 100%;
 }
 
-.projects-container .top-teeth-border-decorator {
-    float: left;
-    background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 18px;
-    width: 100%;
-}
-
 .projects-list-container {
-float: left;
-background: #E9E2E4;
-width: 100%;
-    }
-
-
-.projects-container .bottom-teeth-border-decorator {
-    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 18px;
+    background: #E9E2E4;
     width: 100%;
 }
 
@@ -1024,22 +1021,6 @@ width: 100%;
 
 .about-container {
     float: left;
-    width: 100%;
-}
-
-.about-container .top-teeth-border-decorator {
-    float: left;
-    background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    background-position: 0px -1px;
-    height: 18px;
-    width: 100%;
-}
-
-.about-container .bottom-teeth-border-decorator {
-    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
-    background-position: 0px -1px;
-    float: left;
-    height: 18px;
     width: 100%;
 }
 
@@ -1379,20 +1360,6 @@ width: 100%;
     float: left;
 }
 
-.main-page-container .top-teeth-border-decorator {
-    float: left;
-    background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 18px;
-    width: 100%;
-}
-
-.main-page-container .bottom-teeth-border-decorator {
-    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
-    float: left;
-    height: 18px;
-    width: 100%;
-}
-
 .success-main {
     margin-top: 10px;
 }
@@ -1485,15 +1452,32 @@ width: 100%;
     margin: 12px 0px;
 }
 
+.review-text-container:hover {
+    position: relative;
+    background: #91c5da;
+    z-index: 100;
+    color: #fff;
+    cursor: pointer;
+}
+
+.review-text-container:hover .review-decorator {
+    background: #ff0000;
+}
+
 .review-decorator {
     position: relative;
     top: -20px;
     left: 40px;
-    float:left;
+    float: left;
     background: url('/images/circles.png');
     background-repeat: no-repeat;
-    width: 100%;
+    margin-right: 50%;
+    width: 13%;
     height: 32px;
+}
+
+.review-decorator.hover {
+    background-position: -39px 0px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -1504,7 +1488,8 @@ width: 100%;
         float:left;
         background: url('/images/circles.png');
         background-repeat: no-repeat;
-        width: 100%;
+        margin-right: 50%;
+        width: 13%;
         height: 32px;
     }
 }
@@ -1526,7 +1511,7 @@ width: 100%;
     margin-right: 15px;
     border: 3px solid #FFF;
     float: left;
-    width: 36px;
+    /*width: 36px;*/
     height: 36px;
     -webkit-box-shadow: 0px 0px 10px #000;
     -moz-box-shadow: 0px 0px 10px #000;
@@ -1547,20 +1532,6 @@ width: 100%;
 
 .contacts-main-container {
     float: left;
-    width: 100%;
-}
-
-.contacts-main-container .top-teeth-border-decorator {
-    float: left;
-    background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 18px;
-    width: 100%;
-}
-
-.contacts-main-container .bottom-teeth-border-decorator {
-    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
-    float: left;
-    height: 18px;
     width: 100%;
 }
 
@@ -1618,10 +1589,6 @@ width: 100%;
     text-align: left;
 }
 
-.contact-input {
-    float: left;
-}
-
 .contacts-right-container {
     float: right;
     width: 250px;
@@ -1637,9 +1604,6 @@ width: 100%;
     float: left;
     border: solid 1px #999;
     width: 230px;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
     -moz-border-radius: 8px;
     -webkit-border-radius: 15px;
     border-radius: 10px;
@@ -1647,6 +1611,10 @@ width: 100%;
     -webkit-box-shadow: inset 2px 2px 2px 0px #9C9C9C;
     box-shadow: inset 2px 2px 2px 0px #9C9C9C;
     clear: right;
+}
+
+.contact-input:focus {
+    border: 3px solid #64dcb8;
 }
 
 .contacts-form-container form {
@@ -1667,6 +1635,7 @@ width: 100%;
 }
 
 .submit-button {
+    cursor: pointer;
     float: left;
     color: #FFF;
     font-family: Calibri;
@@ -1758,20 +1727,6 @@ width: 100%;
 
 .stories-main-container {
     float: left;
-    width: 100%;
-}
-
-.stories-main-container .top-teeth-border-decorator {
-    float: left;
-        background: url("/images/services/services-top-teeth-border-decorator.png") repeat-x;
-    height: 18px;
-    width: 100%;
-}
-
-.stories-main-container .bottom-teeth-border-decorator {
-    background: url("/images/services/services-bottom-teeth-border-decorator.png") repeat-x;
-    float: left;
-    height: 18px;
     width: 100%;
 }
 

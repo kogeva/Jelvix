@@ -12,6 +12,7 @@ class contactsActions extends sfActions
 {
     public function executeNew(sfWebRequest $request)
     {
+        $this->getResponse()->setTitle(sfConfig::get('app_titles_contacts'));
         $this->contactForm = new JelvixContactsForm();
     }
 

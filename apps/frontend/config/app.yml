@@ -13,3 +13,13 @@ all:
       - kogeva19898@gmail.com
       - vovan5@yandex.ru
 
+  titles:
+    main: Jelvix
+    about: About
+    services: Services
+    projects: Projects
+    stories: Stories
+    news: News
+    contacts: Contacts
+    request: Request a quote
+

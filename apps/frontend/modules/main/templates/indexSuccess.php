@@ -26,24 +26,26 @@
             <div class="recent-projects-container">
                 <ul class="recent-projects-list">
                     <?php foreach ($projects as $project):?>
-                        <?php $reviews = $project->getJelvixReview();
-                              $review = $reviews[0];
+                        <?php $stories = $project->getJelvixStories();
+                        $stories = $stories[0];
                         ?>
                     <li class="project-element">
                         <div class="project">
                             <div class="project-shadow">
                                 <img src="<?php echo $project->getThumbnail() ?>" width="260" height="260" alt="">
-                                <a class="boroda"></a>
+                                <a href="<?php echo url_for2('jelvix_projects_show', array( 'id' => $project->getId())) ?>" class="project-link">
+                                    <span><?php echo $project->getTitle() ?></span>
+                                </a>
                             </div>
                         </div>
                         <div class="review-container">
                             <div class="review-text-container">
-                                <div class="text"><?php echo $review->getText()?></div>
+                                <div class="text"><?php echo $stories->getText()?></div>
                             </div>
                             <div class="review-decorator"></div>
                             <div class="user-info-container">
-                                <img src="<?php echo $review->getAuthorPhoto()?>" alt="">
-                                <div class="user-name"><?php echo $review->getAuthor()?></div>
+                                <img src="<?php echo $stories->getPhoto()?>" alt="">
+                                <div class="user-name"><?php echo $stories->getAuthor()?></div>
                                 <div class="project-name"><a href="<?php echo $project->getOtherLink() ?>"><?php echo $project->getOtherLink() ?></a></div>
                             </div>
                         </div>
@@ -62,5 +64,12 @@
         speed: 2000,
         auto: true,
         pause: 8000
+    });
+
+    $('.review-text-container').bind('mouseenter mouseleave', function() {
+        $(this).siblings('.review-decorator').toggleClass("hover");
+    });
+    $('.review-text-container').bind('click', function() {
+        $(location).attr('href','/stories');
     });
 </script>

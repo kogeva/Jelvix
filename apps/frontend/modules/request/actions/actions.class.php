@@ -17,6 +17,7 @@ class requestActions extends sfActions
      */
     public function executeNew(sfWebRequest $request)
     {
+        $this->getResponse()->setTitle(sfConfig::get('app_titles_request'));
         $this->setLayout('request');
 
         $this->form = new JelvixRequestForm();

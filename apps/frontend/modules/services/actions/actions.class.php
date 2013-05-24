@@ -12,6 +12,7 @@ class servicesActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+      $this->getResponse()->setTitle(sfConfig::get('app_titles_services'));
       $this->services = $this->getRoute()->getObjects();
       $this->services = $this->services->getData();
       $this->services = $this->buildDataForFlasgs($this->services);

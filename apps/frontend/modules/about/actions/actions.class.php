@@ -17,6 +17,7 @@ class aboutActions extends sfActions
      */
     public function executeIndex(sfWebRequest $request)
     {
+        $this->getResponse()->setTitle(sfConfig::get('app_titles_about'));
         $this->lastFiveNews = JelvixNewsTable::getLastFiveNews();
     }
 }

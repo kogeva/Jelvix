@@ -52,23 +52,6 @@ JelvixProjectCategory:
   columns:
       name:       { type: string(255), notnull: true }
 
-ProjectReview:
-  actAs:  { Timestampable: ~ }
-  columns:
-    project_id:   { type: integer }
-    author:       { type: string, notnull: true }
-    author_photo: { type: string(255) }
-    text:         { type: string, notnull: true }
-  relations:
-    JelvixProjects:
-      class: JelvixProjects
-      local: project_id
-      foreign: id
-      foreignAlias: JelvixReview
-      foreignType: many
-      type: one
-      onDelete: CASCADE
-
 JelvixContacts:
   actAs:  { Timestampable: ~ }
   columns:
@@ -89,7 +72,17 @@ JelvixRequest:
 JelvixStories:
   actAs:  { Timestampable: ~ }
   columns:
-    author:   { type: string(250), notnull: true }
-    photo:    { type: string(250), notnull: true }
-    position: { type: string(250), notnull: true }
-    text:     { type: text, notnull: true }
+    project_id: { type: integer }
+    author:     { type: string(250), notnull: true }
+    photo:      { type: string(250), notnull: true }
+    position:   { type: string(250), notnull: true }
+    text:       { type: text, notnull: true }
+  relations:
+      JelvixProjects:
+        class: JelvixProjects
+        local: project_id
+        foreign: id
+        foreignAlias: JelvixStories
+        foreignType: many
+        type: one
+        onDelete: CASCADE

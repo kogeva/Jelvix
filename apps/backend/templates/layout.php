@@ -4,11 +4,68 @@
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico"/>
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+      <style type="text/css">
+          body {
+              padding: 0;
+              margin: 0;
+          }
+          .header {
+              float: left;
+              width: 100%;
+              height: 150px;
+              background: rgba(26, 26, 26, 0.6);
+          }
+
+          .logo {
+              margin: 24px 100% 0 20px;
+          }
+
+          .menu {
+              border-top: 3px solid rgb(43, 43, 43);
+              border-bottom: 3px solid #000;
+              width: 100%;
+              height: 45px;
+              padding: 0;
+              margin: 35px 0 0 0;
+              background: rgb(255, 255, 255);
+          }
+          .menu .menu-item {
+              font-size: 16px;
+              list-style: none;
+              float: left;
+              margin: 15px 0 0 15px;
+          }
+
+          .menu .menu-item a {
+              text-decoration: none;
+              color: #377EE9;
+          }
+
+          .menu .menu-item a:hover {
+              color: rgb(23, 199, 128);
+          }
+
+          .content {
+              float: left;
+              width: 100%;
+          }
+      </style>
   </head>
   <body>
-    <?php echo $sf_content ?>
+  <div class="header">
+      <img class="logo" src="/images/main-logo.png" alt="">
+      <ul class="menu">
+          <li class="menu-item"><?php echo link_to('News', 'jelvix_news')?></li>
+          <li class="menu-item"><?php echo link_to('Services', 'jelvix_services')?></li>
+          <li class="menu-item"><?php echo link_to('Projects', 'jelvix_projects')?></li>
+          <li class="menu-item"><?php echo link_to('Contact', 'jelvix_contacts')?></li>
+      </ul>
+  </div>
+  <div class="content">
+      <?php echo $sf_content ?>
+  </div>
   </body>
 </html>

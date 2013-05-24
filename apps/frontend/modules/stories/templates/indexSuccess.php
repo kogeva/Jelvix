@@ -57,7 +57,9 @@
 
     $('.stories-slider').bxSlider({
         mode: 'fade',
-        speed: 1000
+        speed: 1500,
+        auto: true,
+        pause: 8000
     });
     $('.author-photo').each(function(){
 
