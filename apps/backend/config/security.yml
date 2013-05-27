@@ -3,7 +3,7 @@
 
 default:
   is_secure: true
-#index:
+index:
 #  is_secure: false
-#all:
+all:
 #  is_secure: true

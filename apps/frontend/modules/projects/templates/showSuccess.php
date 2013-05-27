@@ -23,7 +23,7 @@
                 <div class="show-project-title"><?php echo $project->getTitle()?></div>
                 <img src="<?php echo $project->getPhoto() ?>" class="show-project-photo" alt="">
                 <div class="show-project-description-static">Description:</div>
-                <div class="show-project-description"><?php echo nl2br($project->getDescription()) ?></div>
+                <div class="show-project-description"><?php echo sfOutputEscaper::unescape($project->getDescription()) ?></div>
                 <ul class="link-to-container">
                     <li>
                         <a class="link-to-itunes" href="<?php echo $project->getIosLink() ?>">

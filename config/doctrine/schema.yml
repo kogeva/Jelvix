@@ -3,7 +3,8 @@ JelvixNews:
   columns:
     title:  { type: string(255), notnull: true }
     logo:   { type: string(255) }
-    text:   {type: string }
+    text:   { type: string }
+    is_active: { type: boolean, default: 1, notnull: true }
 
 JelvixServices:
   actAs:         { Timestampable: ~ }

@@ -139,7 +139,7 @@ body {
     /*height: 500px; */
     width: 100%;
     float: left;
-    margin: 25px 0 12px 0;
+    margin: 25px 0 0px 0;
 }
 
 .news-container {
@@ -435,6 +435,7 @@ body {
 
 .news-show-text {
     margin: 40px 50px 50px 50px;
+    width: 90%;
     float: left;
     text-align: left;
     font-family: bariol;
@@ -1406,6 +1407,17 @@ body {
     width: 100%;
 }
 
+.to-stories {
+    color: #726863;
+    text-decoration: none;
+}
+
+.to-stories:hover {
+    color: #fff;
+    text-decoration: wavy;
+}
+
+
 .main-page-container .header-decorator {
     position: relative;
     width: 20px;
@@ -1811,6 +1823,8 @@ body {
 }
 
 .stories-container .author-photo {
+    max-width: 152px;
+    max-height: 108px;
     float: left;
     border: 3px solid #fff;
     margin: 25px 15px 0px 30px;
@@ -1849,4 +1863,28 @@ body {
 
 .stories-right .author-photo {
     margin: 25px 15px 0px 15px;
+}
+
+.privacy {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.privacy:hover {
+    text-shadow: 0px 0px 16px #fff;
+}
+
+.privacy-policy {
+    float: left;
+    background: #E9E2E4;
+    width: 100%;
+}
+
+.pp-text {
+    width: 800px;
+    margin: 0 auto;
+}
+/************************************/
+.active.footer-item li a, .active.footer-item li{
+    color: rgb(66, 158, 243);
 }

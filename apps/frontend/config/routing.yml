@@ -73,6 +73,10 @@ jelvix_stories:
     module: stories
     prefix_path: /stories
 
+jelvix_privacy:
+  url: /privacy-policy
+  param: { module: pp, action: index }
+
 
 # default rules
 homepage:

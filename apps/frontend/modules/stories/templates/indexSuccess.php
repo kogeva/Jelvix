@@ -50,27 +50,5 @@
 </div>
 <script type="text/javascript">
 
-    function getRandomInt(min, max)
-    {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
 
-    $('.stories-slider').bxSlider({
-        mode: 'fade',
-        speed: 1500,
-        auto: true,
-        pause: 8000
-    });
-    $('.author-photo').each(function(){
-
-        randomNumber = getRandomInt(-5, 5);
-        value = 'scale(1) rotate('+randomNumber+'deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg)'
-        $(this).css({
-            '-moz-transform' : value,
-            '-webkit-transform' : value,
-            '-o-transform' : value,
-            '-ms-transform' : value,
-            'transform' : value
-        });
-    });
 </script>

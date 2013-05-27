@@ -41,37 +41,3 @@
     </div>
     <div class="bottom-teeth-border-decorator"></div>
 </div>
-<script type="text/javascript">
-
-    function currentSlide( current ) {
-        if(current <= 1 )
-            $('.slidesPrevious').addClass('sliderButtonPrevious').removeAttr('href');
-        else
-            $('.slidesPrevious').removeClass('sliderButtonPrevious').attr('href', '#');
-
-        if(current == $("#slides").slides("status","total"))
-            $('.slidesNext').addClass('sliderButtonNext').removeAttr('href');
-        else
-            $('.slidesNext').removeClass('sliderButtonNext').attr('href', '#');
-    }
-
-    $(function(){
-        $("#slides").slides({
-            width: 990,
-            height: 900
-        });
-
-        $("#slides").slides({
-            navigateEnd: function( current ) {
-                currentSlide( current );
-            },
-            loaded: function(){
-                currentSlide( 1 );
-            }
-        });
-
-        currentSlide( 1 );
-    });
-
-
-</script>

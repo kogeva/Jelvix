@@ -19,6 +19,7 @@ abstract class BaseJelvixNewsForm extends BaseFormDoctrine
       'title'      => new sfWidgetFormInputText(),
       'logo'       => new sfWidgetFormInputText(),
       'text'       => new sfWidgetFormTextarea(),
+      'is_active'  => new sfWidgetFormInputCheckbox(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
@@ -28,6 +29,7 @@ abstract class BaseJelvixNewsForm extends BaseFormDoctrine
       'title'      => new sfValidatorString(array('max_length' => 255)),
       'logo'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'text'       => new sfValidatorString(array('required' => false)),
+      'is_active'  => new sfValidatorBoolean(array('required' => false)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

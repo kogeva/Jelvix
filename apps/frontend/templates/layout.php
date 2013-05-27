@@ -50,37 +50,37 @@
             </div>
             <div class="footer">
                 <div class="footer-list-container">
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-item">
                         <li><?php echo link_to('about', 'jelvix_about') ?></li>
                         <li>..........</li>
                         <li>......</li>
                         <li>...</li>
                     </ul>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-item">
                         <li><?php echo link_to('services', 'jelvix_sevices') ?></li>
                         <li>..........</li>
                         <li>......</li>
                         <li>...</li>
                     </ul>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-item">
                         <li><?php echo link_to('projects', 'jelvix_projects') ?></li>
                         <li>..........</li>
                         <li>......</li>
                         <li>...</li>
                     </ul>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-item">
                         <li><?php echo link_to('stories', 'jelvix_stories') ?></li>
                         <li>..........</li>
                         <li>......</li>
                         <li>...</li>
                     </ul>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-item">
                         <li><?php echo link_to('news', 'jelvix_news') ?></li>
                         <li>..........</li>
                         <li>......</li>
                         <li>...</li>
                     </ul>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-item">
                         <li><?php echo link_to('contacts', 'jelvix_contacts_new') ?></li>
                         <li>..........</li>
                         <li>......</li>
@@ -96,9 +96,9 @@
                     <div class="or-call-use">or call us 1234567XXX</div>
                 </div>
                 <div class="copyriting-informations">
-                    <ul>
-                        <li>© 2013 Jelvix. All rights reserved.</li>
-                        <li><span>Privacy Policy</span></li>
+                    <ul class="footer-item">
+                        <li><a href="<?php echo url_for('jelvix_privacy')?>" class="privacy">© 2013 Jelvix. All rights reserved.</a></li>
+                        <li><span><a href="<?php echo url_for('jelvix_privacy')?>" class="privacy">Privacy Policy</a></span></li>
                     </ul>
                 </div>
             </div>

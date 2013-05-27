@@ -12,5 +12,29 @@ class JelvixProjectsForm extends BaseJelvixProjectsForm
 {
   public function configure()
   {
+      $this->widgetSchema['photo'] = new sfWidgetFormInputFileEditable(array(
+          'label'     => 'photo',
+          'file_src'  => $this->getObject()->getPhoto(),
+          'is_image'  => true,
+          'edit_mode' => !$this->isNew(),
+          'template'  => '<div>%file%<br />%input%<br /><div class="delete_file">%delete% %delete_label%</div></div>',
+      ));
+
+      $this->widgetSchema['thumbnail'] = new sfWidgetFormInputFileEditable(array(
+          'label'     => 'Thumbnail',
+          'file_src'  => $this->getObject()->getThumbnail(),
+          'is_image'  => true,
+          'edit_mode' => !$this->isNew(),
+          'template'  => '<div>%file%<br />%input%<br /><div class="delete_file">%delete% %delete_label%</div></div>',
+      ));
+
+      $this->validatorSchema['thumbnail'] = new sfValidatorFile(array(
+          'required'   => false,
+          'path'       => sfConfig::get('sf_upload_dir').'/img',
+          'mime_types' => 'web_images',
+      ));
+
+      $this->validatorSchema['logo_delete'] = new sfValidatorPass();
+      unset($this['created_at'], $this['updated_at']);
   }
 }

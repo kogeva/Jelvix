@@ -13,7 +13,9 @@ class newsActions extends sfActions
     public function executeIndex(sfWebRequest $request)
     {
         $this->getResponse()->setTitle(sfConfig::get('app_titles_news'));
-        $this->pager = new sfDoctrinePager('JelvixNews', 4);
+        $this->pager = new sfDoctrinePager('JelvixNews', 1);
+        $this->pager->setQuery(JelvixNewsTable::getQueryActiveNews());
+        $this->pager->setMaxPerPage(4);
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
     }

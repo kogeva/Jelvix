@@ -14,8 +14,11 @@ generator:
     config:
       actions: ~
       fields:  ~
-      list:    ~
+      list:
+         display: [title, text]
       filter:  ~
       form:    ~
-      edit:    ~
-      new:     ~
+      edit:
+        display: [category_id, title, text]
+      new:
+        display: [category_id, title, text]

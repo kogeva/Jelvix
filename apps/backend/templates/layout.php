@@ -15,7 +15,7 @@
           .header {
               float: left;
               width: 100%;
-              height: 150px;
+              height: 160px;
               background: rgba(26, 26, 26, 0.6);
           }
 
@@ -47,11 +47,6 @@
           .menu .menu-item a:hover {
               color: rgb(23, 199, 128);
           }
-
-          .content {
-              float: left;
-              width: 100%;
-          }
       </style>
   </head>
   <body>
@@ -61,7 +56,12 @@
           <li class="menu-item"><?php echo link_to('News', 'jelvix_news')?></li>
           <li class="menu-item"><?php echo link_to('Services', 'jelvix_services')?></li>
           <li class="menu-item"><?php echo link_to('Projects', 'jelvix_projects')?></li>
+          <li class="menu-item"><?php echo link_to('Stories', 'jelvix_stories')?></li>
           <li class="menu-item"><?php echo link_to('Contact', 'jelvix_contacts')?></li>
+          <li class="menu-item"><?php echo link_to('Request', 'jelvix_request')?></li>
+          <?php if($sf_user->isAuthenticated()):?>
+            <li class="menu-item" style="float: right; margin-right: 22px;"><a href="/admin.php/guard/logout">Logout</a></li>
+          <?php endif?>
       </ul>
   </div>
   <div class="content">

@@ -18,5 +18,7 @@ generator:
         display: [title, description]
       filter:  ~
       form:    ~
-      edit:    ~
-      new:     ~
+      edit:
+        display: [category_id, title, thumbnail, photo, description, ios_link, android_link, other_link]
+      new:
+        display: [category_id, title, thumbnail, photo, description, ios_link, android_link, other_link]

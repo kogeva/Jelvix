@@ -24,17 +24,3 @@
     </div>
     <div class="bottom-teeth-border-decorator"></div>
 </div>
-<script type="text/javascript">
-    $('.sevices-entity').on('mouseenter', function() {
-       $(this).find('div').each(function(){
-           $(this).addClass("hover");
-       });
-    });
-
-    $('.sevices-entity').on('mouseleave', function() {
-        $(this).find('div').each(function(){
-            $(this).removeClass("hover");
-        });
-    });
-
-</script>

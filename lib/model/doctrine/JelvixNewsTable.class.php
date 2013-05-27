@@ -27,4 +27,13 @@ class JelvixNewsTable extends Doctrine_Table
 
         return $query->execute();
     }
+
+    public static function getQueryActiveNews()
+    {
+        $query = Doctrine_Query::create()
+            ->from('JelvixNews jn')
+            ->where('jn.is_active = 1');
+
+        return $query;
+    }
 }

@@ -23,6 +23,7 @@
                 <div class="text">RECENT PROJECTS</div>
                 <div class="header-decorator"></div>
             </div>
+
             <div class="recent-projects-container">
                 <ul class="recent-projects-list">
                     <?php foreach ($projects as $project):?>
@@ -38,6 +39,21 @@
                                 </a>
                             </div>
                         </div>
+                    </li>
+                    <?php endforeach ?>
+                </ul>
+            </div>
+            <div class="main-bottom-header">
+                <div class="text"><a class="to-stories" href="<?php echo url_for('jelvix_stories')?>">See more real life stories</a></div>
+                <div class="header-decorator"></div>
+            </div>
+            <div class="stories-container">
+                <ul class="recent-projects-list">
+                <?php foreach($projects as $project):?>
+                    <?php $stories = $project->getJelvixStories();
+                    $stories = $stories[0];
+                    ?>
+                    <li class="project-element">
                         <div class="review-container">
                             <div class="review-text-container">
                                 <div class="text"><?php echo $stories->getText()?></div>
@@ -50,7 +66,7 @@
                             </div>
                         </div>
                     </li>
-                    <?php endforeach ?>
+                <?php endforeach ?>
                 </ul>
             </div>
         </div>
@@ -58,18 +74,4 @@
     </div>
 </div>
 <script type="text/javascript">
-    $('.main-slider').bxSlider({
-        slideWidth : 980,
-        adaptiveHeight: true,
-        speed: 2000,
-        auto: true,
-        pause: 8000
-    });
-
-    $('.review-text-container').bind('mouseenter mouseleave', function() {
-        $(this).siblings('.review-decorator').toggleClass("hover");
-    });
-    $('.review-text-container').bind('click', function() {
-        $(location).attr('href','/stories');
-    });
 </script>

@@ -8,13 +8,16 @@
  * @property string $title
  * @property string $logo
  * @property string $text
+ * @property boolean $is_active
  * 
- * @method string     getTitle() Returns the current record's "title" value
- * @method string     getLogo()  Returns the current record's "logo" value
- * @method string     getText()  Returns the current record's "text" value
- * @method JelvixNews setTitle() Sets the current record's "title" value
- * @method JelvixNews setLogo()  Sets the current record's "logo" value
- * @method JelvixNews setText()  Sets the current record's "text" value
+ * @method string     getTitle()     Returns the current record's "title" value
+ * @method string     getLogo()      Returns the current record's "logo" value
+ * @method string     getText()      Returns the current record's "text" value
+ * @method boolean    getIsActive()  Returns the current record's "is_active" value
+ * @method JelvixNews setTitle()     Sets the current record's "title" value
+ * @method JelvixNews setLogo()      Sets the current record's "logo" value
+ * @method JelvixNews setText()      Sets the current record's "text" value
+ * @method JelvixNews setIsActive()  Sets the current record's "is_active" value
  * 
  * @package    Jelvix
  * @subpackage model
@@ -37,6 +40,11 @@ abstract class BaseJelvixNews extends sfDoctrineRecord
              ));
         $this->hasColumn('text', 'string', null, array(
              'type' => 'string',
+             ));
+        $this->hasColumn('is_active', 'boolean', null, array(
+             'type' => 'boolean',
+             'default' => 1,
+             'notnull' => true,
              ));
     }
 
