@@ -1,0 +1,19 @@
+#sf_admin_container {
+    margin-top: 25px;
+}
+
+/*#sf_admin_bar {*/
+    /*float: left;*/
+/*}*/
+
+.jqte {
+    width: 620px;
+}
+
+.sf_admin_text.sf_admin_list_td_text {
+    width: 500px;
+}
+
+.delete_file label {
+    width: 150px;
+}
