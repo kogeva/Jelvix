@@ -27,6 +27,7 @@ class newsActions extends sfActions
 
     public function execute404 (sfWebRequest $requerst)
     {
+        //$this->getResponse()->removeStylesheet('main.css');
         $this->setLayout(false);
     }
 }

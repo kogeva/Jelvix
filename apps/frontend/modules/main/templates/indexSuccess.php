@@ -44,7 +44,7 @@
                 </ul>
             </div>
             <div class="main-bottom-header">
-                <div class="text"><a class="to-stories" href="<?php echo url_for('jelvix_stories')?>">See more real life stories</a></div>
+                <div class="text"><a class="to-stories" href="<?php echo url_for('jelvix_stories')?>">See more</a> real life stories</div>
                 <div class="header-decorator"></div>
             </div>
             <div class="stories-container">

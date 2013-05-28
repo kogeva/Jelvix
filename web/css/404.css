@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    /*zoom: 95%;*/
+    background: url("/images/texture_jelvix.jpg");
+    background-repeat: no-repeat;
+}
+.wrap {
+    margin: 0 auto;
+    width: 1024px;
+}
+.main {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+
+.container-404 {
+    margin: 100px 100px;
+    width: 80%;
+    float: left;
+    border-radius: 20px;
+    -moz-box-shadow:0px 0px 10px 1px #393939;
+    -webkit-box-shadow:0px 0px 10px 1px #393939;
+    box-shadow:0px 0px 10px 1px #393939;
+    text-align: center;
+}
+
+.container-404 img {
+    margin: 40px;
+    float: left;
+    max-height: 300px;
+}
+
+.head-404 {
+    font-family: Bariol;
+    font-size: 32px;
+    width: 65%;
+    margin: 80px 0 0 0;
+    float: left;
+}
+.tollden {
+    float: left;
+    width: 535px;
+    color: #FFF;
+    font-family: Bariol;
+}
+
+.start-over {
+    margin-top: 30px;
+    float: left;
+    font-family: Bariol;
+    font-size: 18px;
+    width: 65%;
+}
+
+.start-over a {
+    color: #4ab6d2;
+}

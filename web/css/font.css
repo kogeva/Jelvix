@@ -22,7 +22,7 @@
 }
 @font-face {
     font-family: Caviar-Dreams;
-    src: url("/fonts/CaviarDreams_Bold-webfont.ttf") /* TTF file for CSS3 browsers */
+    src: url("/fonts/CaviarDreams.ttf") /* TTF file for CSS3 browsers */
 }
 
 @font-face {
@@ -34,6 +34,15 @@
     url("/fonts/calibri.svg") format("svg");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: Patrick-Hand;
+    src: url("/fonts/PatrickHand-Regular.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: Patrick-Hand;
+    src: url("/fonts/PatrickHand-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
 @font-face {

@@ -30,8 +30,7 @@
                         <div class="pagination-text-decorator">Prev</div>
                     </a>
                 <?php else: ?>
-                    <a class="prev-pagination prev-no-active"
-                       href="/frontend_dev.php/news?page=<?php echo $pager->getPreviousPage() ?>">
+                    <a class="prev-pagination prev-no-active">
                         <div class="pagination-text-decorator">Prev</div>
                     </a>
                 <?php endif ?>
@@ -55,7 +54,7 @@
                         <div class="pagination-text-decorator">Next</div>
                     </a>
                 <?php else: ?>
-                    <a class="next-pagination next-not-active" href="/frontend_dev.php/news?page=<?php echo $pager->getNextPage() ?>">
+                    <a class="next-pagination next-not-active" ">
                         <div class="pagination-text-decorator">Next</div>
                     </a>
                 <?php endif ?>

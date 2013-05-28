@@ -11,6 +11,9 @@
     <div class="request-form">
         <form id='create-request' action="<?php echo url_for('jelvix_request_create')  ?>" method="post">
             <div class="left-part">
+                <?php if ($sf_user->hasFlash('notice')): ?>
+                    <div class="notice">Your message has been sent. We will contact you within two business days.</div>
+                <?php endif; ?>
                 <ul class="form-inputs-container">
                     <li class="form-input">
                         <div class="label"><?php echo $form['name']->renderLabel()?></div>
@@ -44,7 +47,7 @@
                 </ul>
                 <div class="bottom-form-container">
                     <button type="submit"><span>Submit</span></button>
-                    <div class="notification">We will contact you within one business day.</div>
+                    <div class="notification">We will contact you within two business days.</div>
                 </div>
             </div>
             <div class="right-part">

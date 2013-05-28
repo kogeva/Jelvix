@@ -7,6 +7,9 @@
                 we
                 can do for you.
             </div>
+            <?php if ($sf_user->hasFlash('notice')): ?>
+                <div class="notice">Your message has been sent. We will contact you within two business days.</div>
+            <?php endif; ?>
             <div class="contacts-form-container">
                 <form action="<?php echo url_for('jelvix_contacts_create') ?>" method="post">
                     <?php echo $contactForm['name']->renderRow(array('class' => 'contact-input')) ?>

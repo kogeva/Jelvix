@@ -13,7 +13,6 @@
     <div class="main">
         <div class="container">
             <div class="header">
-                <?php //var_dump(use_stylesheet('request.css')) or die; ?>
                 <a href="<?php echo url_for('homepage') ?>" class="main-logo" contextmenu="main page"></a>
 
                 <div class="logo-vertical-line"></div>
@@ -31,7 +30,7 @@
             <div class="copyriting-informations">
                 <ul>
                     <li>© 2013 Jelvix. All rights reserved.</li>
-                    <li><span>Privacy Policy</span></li>
+                    <li><span><a class="link-privacy" href="<?php echo url_for('jelvix_privacy')?>">Privacy Policy</a></span></li>
                 </ul>
             </div>
         </div>

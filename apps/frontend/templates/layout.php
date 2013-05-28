@@ -97,7 +97,7 @@
                 </div>
                 <div class="copyriting-informations">
                     <ul class="footer-item">
-                        <li><a href="<?php echo url_for('jelvix_privacy')?>" class="privacy">© 2013 Jelvix. All rights reserved.</a></li>
+                        <li>© 2013 Jelvix. All rights reserved.</li>
                         <li><span><a href="<?php echo url_for('jelvix_privacy')?>" class="privacy">Privacy Policy</a></span></li>
                     </ul>
                 </div>

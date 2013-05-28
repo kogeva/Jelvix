@@ -46,7 +46,7 @@ class requestActions extends sfActions
 //                $request->getParameter('email_address'),
 //                'Hello people'
 //            );
-
+            $this->getUser()->setFlash('notice', 'success');
             $this->redirect('jelvix_request_new', $job);
         }
     }
