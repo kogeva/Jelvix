@@ -136,11 +136,17 @@ $(document).ready(function() {
     }
 
     $('.stories-slider').bxSlider({
+        adaptiveHeight : true,
         mode: 'fade',
         speed: 1500,
         auto: true,
-        pause: 8000
+        pause: 8000,
+        onSliderLoad : function () {
+           $('.bx-viewport').css({'overflow' : 'visible'});
+        }
+
     });
+//    $('.bx-viewport').css({'height' : '330px'});
     $('.author-photo').each(function(){
 
         randomNumber = getRandomInt(-5, 5);

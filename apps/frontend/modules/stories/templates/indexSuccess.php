@@ -49,6 +49,5 @@
     <div class="bottom-teeth-border-decorator"></div>
 </div>
 <script type="text/javascript">
-
-
+    $('bx-viewport').css({'heigh' : '330px'});
 </script>
