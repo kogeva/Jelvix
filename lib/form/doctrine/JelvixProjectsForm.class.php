@@ -20,6 +20,12 @@ class JelvixProjectsForm extends BaseJelvixProjectsForm
           'template'  => '<div>%file%<br />%input%<br /><div class="delete_file">%delete% %delete_label%</div></div>',
       ));
 
+      $this->validatorSchema['photo'] = new sfValidatorFile(array(
+          'required'   => false,
+          'path'       => sfConfig::get('sf_upload_dir').'/img',
+          'mime_types' => 'web_images',
+      ));
+
       $this->widgetSchema['thumbnail'] = new sfWidgetFormInputFileEditable(array(
           'label'     => 'Thumbnail',
           'file_src'  => $this->getObject()->getThumbnail(),
@@ -30,7 +36,7 @@ class JelvixProjectsForm extends BaseJelvixProjectsForm
 
       $this->validatorSchema['thumbnail'] = new sfValidatorFile(array(
           'required'   => false,
-          'path'       => sfConfig::get('sf_upload_dir').'/img',
+//          'path'       => sfConfig::get('sf_upload_dir').'/img',
           'mime_types' => 'web_images',
       ));
 
