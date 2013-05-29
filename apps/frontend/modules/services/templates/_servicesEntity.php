@@ -13,7 +13,7 @@
                                 <?php echo $item->getTitle()?>
                             </div>
                             <a  class="entity-text category-architect">
-                                <?php echo $smallText.'...' ?>
+                                <?php echo sfOutputEscaper::unescape($smallText).'...' ?>
                             </a>
                             <input type="hidden" class="source-text" value="<?php echo $item->getText() ?>">
                             <input type="hidden" class="cuted-text" value="<?php echo $smallText ?>">
