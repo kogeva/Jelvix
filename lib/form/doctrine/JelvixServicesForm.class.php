@@ -12,5 +12,6 @@ class JelvixServicesForm extends BaseJelvixServicesForm
 {
   public function configure()
   {
+      unset($this['created_at'], $this['updated_at']);
   }
 }

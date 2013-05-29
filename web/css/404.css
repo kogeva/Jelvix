@@ -40,6 +40,8 @@ body {
 }
 .tollden {
     float: left;
+    margin-top: 15px;
+    font-size: 22px;
     width: 535px;
     color: #FFF;
     font-family: Bariol;
