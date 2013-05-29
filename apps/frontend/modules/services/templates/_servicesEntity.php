@@ -3,7 +3,7 @@
         <li class="services-list-element">
             <ul class="services-list-element-container">
                 <?php foreach ($service as $item): ?>
-                    <?php $smallText = substr($item->getText(), 0, rand(150, 300)) ?>
+                    <?php $smallText = substr(sfOutputEscaperGetterDecorator::unescape($item->getText()), 0, rand(150, 300)) ?>
                     <li class="cdscadscdsca">
                         <div class="services-entity-container">
                             <div class="sevices-entity">
