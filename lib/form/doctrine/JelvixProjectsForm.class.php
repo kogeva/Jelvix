@@ -36,7 +36,7 @@ class JelvixProjectsForm extends BaseJelvixProjectsForm
 
       $this->validatorSchema['thumbnail'] = new sfValidatorFile(array(
           'required'   => false,
-//          'path'       => sfConfig::get('sf_upload_dir').'/img',
+          'path'       => sfConfig::get('sf_upload_dir').'/img',
           'mime_types' => 'web_images',
       ));
 
