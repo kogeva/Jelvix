@@ -26,11 +26,20 @@
 }
 
 @font-face {
-    font-family: "Calibri";
+    font-family: Caviar-Custom;
+    src: url("/fonts/CaviarDreams_Bold-webfont.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: Caviar-Custom;
+    src: url("/fonts/CaviarDreams_Bold-webfont.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+    font-family: hello;
     src: url("/fonts/calibri.eot");
     src: url("/fonts/calibri.eot?#iefix") format("embedded-opentype"),
     url("/fonts/calibri.woff") format("woff"),
-    url("/fonts/calibri.ttf") format("truetype"),
+    url("/fonts/Cal.ttf") format("truetype"),
     url("/fonts/calibri.svg") format("svg");
     font-weight: normal;
     font-style: normal;
