@@ -16,8 +16,8 @@
                                     <div class="entity-text category-architect">
                                         <span><?php echo $smallText .'...' ?><span>
                                     </div>
-                                    <input type="hidden" class="source-text" value="<?php echo $item->getText() ?>">
-                                    <input type="hidden" class="cuted-text" value="<?php echo $smallText ?>">
+                                    <input type="hidden" class="source-text" value="<?php echo htmlentities($item->getText()) ?>">
+                                    <input type="hidden" class="cuted-text" value="<?php echo htmlentities($smallText) ?>">
                                 </div>
                                 <div
                                     class="border-bottom category-<?php echo $item->getJelvixServicesCategory()->getName() ?>-bottom"></div>
