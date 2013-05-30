@@ -33,11 +33,11 @@ dev:
       transport:
         class: Swift_SmtpTransport
         param:
-          host: smtp.gmail.com
-          port: 465
-          encryption: ssl
-          username: kogeva19898
-          password: kogeva89
+          host: smtp.jelvix.com
+          port: 587
+         # encryption: ssl
+          username: contacts@jelvix.com
+          password: dX7POk4R
 
 all:
   routing:
@@ -61,8 +61,8 @@ all:
       transport:
         class: Swift_SmtpTransport
         param:
-          host: smtp.yandex.ru
+          host: smtp.jelvix.com
           port: 465
-          encryption: ssl
-          username: vovan5
-          password: 19898
+#          encryption: ssl
+          username: contacts
+          password: dX7POk4R

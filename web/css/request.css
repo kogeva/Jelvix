@@ -1,5 +1,4 @@
-body {
-    margin: 0;
+html, body {
 }
 
 .wrap {
@@ -202,6 +201,9 @@ body {
 }
 
 .form-input .label {
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5) !important;
+    -webkit-text-stroke-width: 0.1px !important;
     float: left;
     font-family: Caviar-Dreams;
     font-size: 18px;
@@ -209,6 +211,9 @@ body {
 }
 
 .form-input .valid-error {
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5) !important;
+    -webkit-text-stroke-width: 0.1px !important;
     opacity: 0;
     margin-top: 7px;
     margin-left: 10px;

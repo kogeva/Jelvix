@@ -18,12 +18,23 @@
 
 @font-face {
     font-family: Caviar-Dreams;
-    src: url("/fonts/CaviarDreams.eot") /* EOT file for IE */
+    src: url("/fonts/CaviarDreams.eot")  EOT file for IE
 }
+
 @font-face {
     font-family: Caviar-Dreams;
-    src: url("/fonts/CaviarDreams.ttf") /* TTF file for CSS3 browsers */
+    src: url('/fonts/CaviarDreams.ttf') format('truetype'),
+         url('/fonts/scaviardreams.svg#CaviarDreamsRegular') format('svg');
 }
+
+/*@media all and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: Caviar-Dreams;*/
+        /*src: url('/fonts/CaviarDreams.svg#CaviarDreams') format('svg');*/
+        /*font-weight: normal;*/
+        /*font-style: normal;*/
+    /*}*/
+/*}*/
 
 @font-face {
     font-family: Caviar-Custom;
