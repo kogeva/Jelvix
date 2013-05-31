@@ -7,9 +7,10 @@
 all:
   mails:
     contact:
-      - yusovkirill@gmail.com
-      - konsol@yandex.ru
-      - jelvixteam@gmail.com
+      - kogeva19898@gmail.com
+#      - yusovkirill@gmail.com
+#      - konsol@yandex.ru
+#      - jelvixteam@gmail.com
     request:
       - yusovkirill@gmail.com
       - konsol@yandex.ru
