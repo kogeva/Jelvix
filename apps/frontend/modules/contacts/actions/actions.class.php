@@ -34,15 +34,22 @@ class contactsActions extends sfActions
 
             $this->sendEmail(
                 sfConfig::get('app_mails_contact'),
-                $request->getParameter('email_address'),
-                'Hello people'
+                'contacts@jelvix.com',
+                'New message. Jelvix.com',
+                <<<EOF
+                name: {$request->getParameter('name')}
+                email: {$request->getParameter('email_address')}
+                subject: {$request->getParameter('subject')}
+
+                {$request->getParameter('message')}
+EOF
             );
             $this->getUser()->setFlash('notice', 'success');
             $this->redirect('jelvix_contacts_new', $job);
         }
     }
 
-    private function sendEmail(array $toMail, $from, $text , $theme = '')
+    private function sendEmail(array $toMail, $from, $theme = '', $text  )
     {
         foreach($toMail as $to)
         {

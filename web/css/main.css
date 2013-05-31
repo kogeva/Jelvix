@@ -1843,6 +1843,7 @@ body {
 }
 
 .quotes {
+    margin-left: 4px;
     font-family: Bariol;
     font-size: 40px;
     line-height: 1px;

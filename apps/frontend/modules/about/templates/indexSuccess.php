@@ -14,7 +14,7 @@
                      </div>
                 </div>
                 <div class="about-header">
-                    <div class="text">Why choose us or you key advantages:</div>
+                    <div class="text">Why choose us or our key advantages:</div>
                     <div class="header-decorator"></div>
                 </div>
                 <div class="presents-list">
@@ -55,7 +55,7 @@
                     <?php foreach($lastFiveNews as $news): ?>
                     <li class="small-news-element">
                         <a href="<?php echo url_for2('jelvix_news_show', array('id' => $news->getId()))?>">
-                            <?php echo substr($news->getText(), 0, 45) ?> ...
+                            <?php echo substr($news->getTitle(), 0, 45) ?> ...
                         </a>
                     </li>
                     <?php endforeach?>

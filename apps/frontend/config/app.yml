@@ -7,11 +7,13 @@
 all:
   mails:
     contact:
-      - kogeva19898@gmail.com
-      - vovan5@yandex.ru
+      - yusovkirill@gmail.com
+      - konsol@yandex.ru
+      - jelvixteam@gmail.com
     request:
-      - kogeva19898@gmail.com
-      - vovan5@yandex.ru
+      - yusovkirill@gmail.com
+      - konsol@yandex.ru
+      - jelvixteam@gmail.com
 
   titles:
     main: Jelvix

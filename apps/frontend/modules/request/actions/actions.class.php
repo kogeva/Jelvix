@@ -41,13 +41,35 @@ class requestActions extends sfActions
         {
             $job = $form->save();
 
-//            $this->sendEmail(
-//                sfConfig::get('app_mails_contact'),
-//                $request->getParameter('email_address'),
-//                'Hello people'
-//            );
+            $this->sendEmail(
+                sfConfig::get('app_mails_contact'),
+                'request@jelvix.com',
+                'New request. Jelvix.com',
+                <<<EOF
+                name: {$request->getParameter('name')}
+                email: {$request->getParameter('email_address')}
+                phone: {$request->getParameter('phone')}
+                company: {$request->getParameter('company')}
+
+                {$request->getParameter('message')}
+EOF
+            );
             $this->getUser()->setFlash('notice', 'success');
             $this->redirect('jelvix_request_new', $job);
+        }
+    }
+
+    private function sendEmail(array $toMail, $from, $theme = '', $text  )
+    {
+        foreach($toMail as $to)
+        {
+            $message = $this->getMailer()->compose();
+            $message->setSubject($theme);
+            $message->setTo($to);
+            $message->setFrom($from);
+            $message->setBody($text, 'text/plain');
+
+            $this->getMailer()->send($message);
         }
     }
 }
