@@ -53,13 +53,7 @@ EOF
     {
         foreach($toMail as $to)
         {
-            $message = $this->getMailer()->compose();
-            $message->setSubject($theme);
-            $message->setTo($to);
-            $message->setFrom($from);
-            $message->setBody($text, 'text/plain');
-
-            $this->getMailer()->send($message);
+            mail($to, $theme, $text, "From: ".$from."\r\n");
         }
     }
 }
