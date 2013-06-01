@@ -42,7 +42,7 @@ class requestActions extends sfActions
             $job = $form->save();
 
             $this->sendEmail(
-                sfConfig::get('app_mails_contact'),
+                sfConfig::get('app_mails_request'),
                 'request@jelvix.com',
                 'New request. Jelvix.com',
                 <<<EOF
