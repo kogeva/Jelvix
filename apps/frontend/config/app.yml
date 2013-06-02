@@ -7,10 +7,12 @@
 all:
   mails:
     contact:
+      - vovan5@yandex.ru
       - yusovkirill@gmail.com
       - konsol@yandex.ru
       - jelvixteam@gmail.com
     request:
+      - vovan5@yandex.ru
       - yusovkirill@gmail.com
       - konsol@yandex.ru
       - jelvixteam@gmail.com
