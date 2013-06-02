@@ -14,8 +14,8 @@
                                         <?php echo $item->getTitle() ?>
                                     </div>
                                     <div class="entity-text category-architect">
-                                        <span class="fulltext"><?php echo sfOutputEscaperGetterDecorator::unescape($item->getText()) ?></span>
-                                        <span class="small-text"><?php echo $smallText .'...' ?></span>
+                                        <div class="fulltext"><?php echo sfOutputEscaperGetterDecorator::unescape($item->getText()) ?></div>
+                                        <div class="small-text"><?php echo $smallText .'...' ?></div>
                                     </div>
                                 </div>
                                 <div
