@@ -593,7 +593,7 @@ body {
 
 .services-entity-container .cervices-entity-body {
     float: left;
-    width: 230px;
+    width: 234px;
 }
 
 .services-entity-container .cervices-entity-head {
@@ -620,63 +620,63 @@ body {
 
 .category-architect-top {
     background: url("/images/services/flags.png") no-repeat;
-    background-position: 0px -78px;
+    background-position: 0px -74px;
 }
 
 .category-architect-body {
     background: url("/images/services/flags-center.png");
+    background-position: -234px 0px;
 }
 
 .category-architect-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -122px;
+    background-position: 0px -115px;
 
 }
 
 /*hover architect*/
 
 .category-architect-top.hover {
-    background-position: -1px -419px;
+    background-position: 0px -358px;
 }
 
 .category-architect-body.hover {
-    background-position: -928px 0;
+    background-position: -1204px 0;
 }
 
 .category-architect-bottom.hover {
-    background-position: 0px -460px;
-
+    background-position: 0px -394px;
 }
 
 /*design*/
 
 .category-design-top {
     background: url("/images/services/flags.png");
-    background-position: 0px -160px;
+    background-position: 0px -148px;
 }
 
 .category-design-body {
     background: url("/images/services/flags-center.png");
-    background-position: -465.5px 0;
+    background-position: -475px 0;
 }
 
 .category-design-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -202px;
+    background-position: 0px -179px;
 }
 
 /*hover design*/
 
 .category-design-top.hover {
-    background-position: 0px 231px;
+    background-position: 0px 168px;
 }
 
 .category-design-body.hover {
-    background-position: -1395px 0;
+    background-position: -1455px 0;
 }
 
 .category-design-bottom.hover {
-    background-position: 0px -549px;
+    background-position: 0px -469px;
 }
 
 /*development*/
@@ -688,7 +688,7 @@ body {
 
 .category-development-body {
     background: url("/images/services/flags-center.png");
-    background-position: -233px 0px;
+    background-position: 1px 0px;
 }
 
 .category-development-bottom {
@@ -700,48 +700,48 @@ body {
 
 .category-development-top.hover {
     background: url("/images/services/flags.png");
-    background-position: 0px -330px;
+    background-position: 0px 316px;
 }
 
 .category-development-body.hover {
-    background-position: 703px 0px;
+    background-position: 1037.5px 0px;
 }
 
 .category-development-bottom.hover {
     background: url("/images/services/flags.png");
-    background-position: 0px -368px;
+    background-position: 0px 276px;
 }
 
 /*grow*/
 
 .category-grow-top {
     background: url("/images/services/flags.png");
-    background-position: 0px -245px;
+    background-position: 0px -812px;
 }
 
 .category-grow-body {
     background: url("/images/services/flags-center.png");
-    background-position: 1169px 0px;
+    background-position: -718px 0px;
 }
 
 .category-grow-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -286px;
+    background-position: 0px -853px;
 }
 
 /*hover grow*/
 
 .category-grow-top.hover {
-    background-position: 0px -598px;
+    background-position: 0px -509px;
 }
 
 .category-grow-body.hover {
-    background-position: -1631px 0px;
+    background-position: -1699px 0px;
 }
 
 .category-grow-bottom.hover {
     background: url("/images/services/flags.png");
-    background-position: 0px -641px;
+    background-position: 0px -550px;
 }
 
 /************************Projects*********************/
