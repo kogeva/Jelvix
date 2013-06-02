@@ -66,7 +66,7 @@
                 <li class="top-decorator"></li>
                 <li class="cm">COOPERATION MODELS</li>
                 <li class="model-element">
-                    <div class="coop-header">OFFSHORE DEDICATED TEAM</div>
+                    <div class="coop-header"><span class="dedicated-team">OFFSHORE DEDICATED TEAM<br><div></div></span></div>
                     <div class="coop-content">LONG-TERM COMMITMENT TO ESTABLISH AND OPERATE A MANAGED IT ENGINEERING FACILITY FOR THE CLIENT ON THE BASIS OF Jelvix.<br>
                         Best solution for long-term
                         assignments and ongoing cooperation. Works as an

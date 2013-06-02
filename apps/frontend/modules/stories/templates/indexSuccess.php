@@ -5,9 +5,9 @@
     <div class="stories-container">
         <div class="stories-slider-container">
             <ul class="stories-slider">
-                <li><img class="stories-slide" src="/images/stories/stories-slide1.png" alt=""></li>
-                <li><img class="stories-slide" src="/images/stories/stories-slide2.png" alt=""></li>
-                <li><img class="stories-slide" src="/images/stories/stories-slide3.png" alt=""></li>
+                <li><img class="stories-slide" src="/images/stories/stories-slide1.jpg" alt=""></li>
+                <li><img class="stories-slide" src="/images/stories/stories-slide2.jpg" alt=""></li>
+                <li><img class="stories-slide" src="/images/stories/stories-slide3.jpg" alt=""></li>
             </ul>
         </div>
         <div class="hr"></div>
@@ -16,8 +16,8 @@
                 <li class="stories-item">
                     <div class="stories-text-container">
                         <div class="text">
-                            <span class="quotes top">”</span>
-                        <span><?php echo $story->getText()?><span class="quotes">„</span>
+                            <span class="quotes top">“  </span>
+                        <span><?php echo '&nbsp'.$story->getText()?><span class="quotes">„</span>
                         </span>
                         </div>
                         <div class="author"><?php echo $story->getAuthor()?></div>

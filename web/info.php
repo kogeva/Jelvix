@@ -8,5 +8,3 @@
  */
 
 echo phpinfo();
-
-mail('kogeva19898@gmail.com', 'kogeva', 'hello amigos');

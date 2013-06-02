@@ -12,15 +12,15 @@
     <div class="container-404">
         <img src="/images/404.png" alt="">
         <div class="head-404">
-            << Not all those who wander are lost.>>
+            <?php echo '«Not all those who wander are lost.»' ?>
         </div>
         <div class="tollden">-J.R.R Tolkien</div>
         <div class="head-404">
             ...but you are
         </div>
         <div class="start-over">
-            We couldn't find the page you where looking for:<br>
-            Maybe you want to just <a href="/">Start over?</a>
+            We couldn't find the page you were looking for:<br>
+            Maybe you want to just <a href="/">start over?</a>
         </div>
     </div>
 </div>

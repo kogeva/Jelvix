@@ -75,7 +75,7 @@
 </div>
 <script type="text/javascript">
     var inputs = {
-        'name' : /^[\d\w]{3,255}$/,
+        'name' : /^[\d\w\s]{3,255}$/,
         'email_address' : /(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/,
         'phone' : /^[\d]{7,255}$/,
         'company' : /^[\w\d]{2,255}$/

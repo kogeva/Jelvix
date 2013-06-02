@@ -142,7 +142,7 @@ body {
     /*height: 500px; */
     width: 100%;
     float: left;
-    margin: 25px 0 0px 0;
+    margin: 17px 0 0px 0;
 }
 
 .news-container {
@@ -534,7 +534,6 @@ body {
     color: #fff;
     display: block;
     text-decoration: none;
-    margin-top: 4px;
     font-family: Calibri;
     font-size: 20px;
     outline: none;
@@ -578,10 +577,14 @@ body {
 }
 
 .services-entity-container .sevices-entity {
+    font-family: Bariol;
     float: left;
     cursor: pointer;
 }
 
+.fulltext {
+    display: none;
+}
 .services-entity-container .border-top {
     float: left;
     width: 233px;
@@ -604,7 +607,7 @@ body {
     margin: 0 20px 15px 20px;
     text-align: left;
     font-family: Bariol;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 
@@ -782,7 +785,7 @@ body {
     color: #fff;
     display: block;
     text-decoration: none;
-    margin: 4px 10px 0 10px;
+    margin: 0px 10px 0 10px;
     font-family: Calibri;
     font-size: 20px;
     outline: none
@@ -903,7 +906,7 @@ body {
     position: relative;
     background: #FFB800;
     color: #FFF;
-    padding: 4px 10px 0 10px;
+    padding: 0px 10px 4px 10px;
     top: 125px;
 }
 
@@ -944,32 +947,31 @@ body {
 /*********************Show project***********************/
 
 .show-project-title {
+    font-weight: bold;
     font-family: Bariol;
     font-size: 36px;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .show-project-photo {
     max-width: 800px;
-    border: 4px solid #78DFBE;
     border-radius: 6px;
-    -webkit-box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.75);
-    box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.75);
 }
 
 .show-project-description-static {
     text-align: left;
     float: left;
+    font-weight: bold;
     font-family: Bariol;
     font-size: 36px;
-    margin: 50px 0px 20px 30px;
-    width: 500px;
+    margin: 70px 0px 40px 30px;
+    width: 90%;
 }
 
 .show-project-description {
     font-family: Bariol;
     font-size: 22px;
+    line-height: 26px;
     text-align: left;
     margin: 0 40px 40px 40px;
     float: left;
@@ -1163,19 +1165,19 @@ body {
     }
 
     .presents-list .two {
-        margin: 15px 0px 0px -40px;
+        margin: 27px 0px 0px -40px;
     }
 
     .presents-list .three {
-        margin: 15px 0px 0px -40px;
+        margin: 29px 0px 0px -40px;
     }
 
     .presents-list .four {
-        margin: 15px 0px 0px -40px;
+        margin: 11px 0px 0px -40px;
     }
 
     .presents-list .five {
-        margin: 15px 0px 0px -40px;
+        margin: 30px 0px 0px -40px;
     }
 }
 
@@ -1268,7 +1270,7 @@ body {
     float: left;
     margin: 15px 0 0px 15px;
     width: 210px;
-    border-bottom: 1px dotted #000000;
+    border-bottom: 2px dotted #000000;
 
 }
 
@@ -1277,21 +1279,41 @@ body {
 }
 
 .model-element .coop-header {
-    text-decoration: underline;
+    float: left;
+    width: 100%;
     padding-top: 5px;
-    margin: 0px 0px 15px 0px;
+    margin: 0px 7px 15px 0px;
+    line-height: 10px;
+    padding: 7px 0 8px 0;
     font-family: Calibri;
-    font-size: 16px;
+    font-size: 15px;
     background: #76E5C1;
+    font-weight: bold;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .model-element .coop-header {
+        font-size: 16px;
+    }
+}
+
+
+
+    .dedicated-team {
+    margin: 0px 0px -2px 8px;
+    height: 14px;
+    float: left;
+    border-bottom: 1px solid black;
 }
 
 .model-element .coop-content {
     color: #2E2E2E;
     float: left;
-    text-align: center;
+    text-align: justify;
     font-family: Calibri;
     font-size: 14px;
     margin-bottom: 5px;
+    margin-right: 7px;
 }
 
 .last-five-news-container {
@@ -1307,7 +1329,7 @@ body {
     width: 0;
     height: 0;
     position: relative;
-    left: 77px;
+    left: 58px;
     top: -28px;
     border-left: 20px solid rgba(0, 0, 0, 0);
     border-right: 20px solid rgba(0, 0, 0, 0);
@@ -1410,7 +1432,7 @@ body {
 .main-bottom-header .text {
     float: left;
     color: #726863;
-    margin: 10px 0 5px 20px;
+    margin: 7px 0 5px 20px;
     text-align: center;
     font-size: 32px;
     font-family: Calibri;

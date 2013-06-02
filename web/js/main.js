@@ -7,19 +7,25 @@ function checkCurrentMenuElement()
     });
 }
 
+function resetActive()
+{
+    $('.services-filter-button').each(function() {
+        $(this).removeClass('active');
+    });
+}
+
 function initServicesEntity()
 {
     $('.sevices-entity').on('click', function () {
-        sourceText = $(this).find('.source-text').val();
-        cutedText  = $(this).find('.cuted-text').val();
-        $mainText  = $(this).find('.entity-text');
 
-        if($($mainText).hasClass('deployed'))
-        {
-            $($mainText).removeClass('deployed').html(cutedText);
+        if($(this).find('.fulltext').is(':hidden')){
+            $(this).find('.fulltext').show()
+            $(this).find('.small-text').hide();
         }
-        else
-            $($mainText).addClass('deployed').html(sourceText);
+        else {
+            $(this).find('.fulltext').hide()
+            $(this).find('.small-text').show();
+        }
     });
 
     $('.sevices-entity').on('mouseenter', function() {
@@ -36,7 +42,6 @@ function initServicesEntity()
 }
 
 $(document).ready(function() {
-
     checkCurrentMenuElement();
     initServicesEntity();
 
@@ -50,18 +55,26 @@ $(document).ready(function() {
 
     $('.services-category-filter-buttons .architect').bind('click', function() {
         $('.load-data-container').load('services/filter-by-categoty?name=architect', initServicesEntity);
+        resetActive();
+        $(this).addClass('active');
     });
 
     $('.services-category-filter-buttons .design').bind('click', function() {
         $('.load-data-container').load('services/filter-by-categoty?name=design', initServicesEntity);
+        resetActive();
+        $(this).addClass('active');
     });
 
     $('.services-category-filter-buttons .development').bind('click', function() {
         $('.load-data-container').load('services/filter-by-categoty?name=development', initServicesEntity);
+        resetActive();
+        $(this).addClass('active');
     });
 
     $('.services-category-filter-buttons .grow').bind('click', function() {
         $('.load-data-container').load('services/filter-by-categoty?name=grow', initServicesEntity);
+        resetActive();
+        $(this).addClass('active');
     });
 
     $('.footer').bind('mouseenter mouseleave', function() {
