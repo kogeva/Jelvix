@@ -16,7 +16,7 @@
                 <li class="stories-item">
                     <div class="stories-text-container">
                         <div class="text">
-                            <span class="quotes top">“  </span>
+                            <span class="quotes top">“</span>
                         <span><?php echo '&nbsp'.$story->getText()?><span class="quotes">„</span>
                         </span>
                         </div>
@@ -33,8 +33,8 @@
             <li class="stories-item">
                 <div class="stories-text-container">
                     <div class="text">
-                        <span class="quotes top">”</span>
-                        <span><?php echo $story->getText()?><span class="quotes">„</span>
+                        <span class="quotes top">“</span>
+                        <span><?php echo '&nbsp'.$story->getText()?><span class="quotes">„</span>
                         </span>
                     </div>
                     <div class="author"><?php echo $story->getAuthor()?></div>

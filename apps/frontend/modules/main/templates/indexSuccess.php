@@ -20,7 +20,7 @@
         <div class="top-teeth-border-decorator"></div>
         <div class="bottom-main-container">
             <div class="main-bottom-header">
-                <div class="text">Recent projects</div>
+                <div class="text">Recent projects or <a class="to-stories" href="<?php echo url_for('jelvix_projects')?>">learn more</a></div>
                 <div class="header-decorator"></div>
             </div>
 
