@@ -758,6 +758,10 @@ body {
     width: 100%;
 }
 
+.projects-list-container p {
+    margin: 5px;
+}
+
 .projects-menu-list {
     list-style: none;
     margin: 0 auto;
