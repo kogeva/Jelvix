@@ -522,7 +522,7 @@ body {
 
 .services-category-filter-buttons .services-filter-button:hover {
     background: url("/images/services/services-sprites.png");
-    background-position: 1px 58px;
+    background-position: 0px 145px;
 }
 
 .services-category-filter-buttons .services-filter-button.active {
@@ -545,17 +545,29 @@ body {
 
 .services-category-filter-buttons .design {
     background: url("/images/services/services-sprites.png");
-    background-position: 1px 145px;
+    background-position: 0px -29px;
+}
+
+.services-category-filter-buttons .design:hover {
+    background-position: 0px 116px;
 }
 
 .services-category-filter-buttons .development {
     background: url("/images/services/services-sprites.png");
-    background-position: 0px 116px;
+    background-position: 0px -58px;
+}
+
+.services-category-filter-buttons .development:hover {
+    background-position: 0px 87px;
 }
 
 .services-category-filter-buttons .grow {
     background: url("/images/services/services-sprites.png");
-    background-position: 0px 87px;
+    background-position: 0px -87px;
+}
+
+.services-category-filter-buttons .grow:hover {
+    background-position: 0px 58px;
 }
 
 .services-list-container .horizontal-line-container {
@@ -771,7 +783,7 @@ body {
 .projects-menu-list .button {
     float: left;
     background: url("/images/services/services-sprites.png");
-    background-position: 0px 87px;
+    background-position: 0px -87px;
     margin: 30px 20px 0 0;
     height: 29px;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -784,6 +796,15 @@ body {
     background: url("/images/services/services-sprites.png");
     background-position: 0px 58px;
 }
+
+.projects-menu-list .button.active {
+    background: url("/images/services/services-sprites.png");
+    background-position: 1px 29px;
+}
+.projects-menu-list .button.active:hover {
+    background-position: 1px 29px;
+}
+
 
 .projects-menu-list .button a {
     color: #fff;
@@ -1301,10 +1322,22 @@ body {
     }
 }
 
-
-
-    .dedicated-team {
+.dedicated-team {
     margin: 0px 0px -2px 8px;
+    height: 14px;
+    float: left;
+    border-bottom: 1px solid black;
+}
+
+.time-materials {
+    margin: 0px 0px -2px 40px;
+    height: 14px;
+    float: left;
+    border-bottom: 1px solid black;
+}
+
+.fixed-budget {
+    margin: 0px 0px -2px 58px;
     height: 14px;
     float: left;
     border-bottom: 1px solid black;

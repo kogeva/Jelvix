@@ -22,7 +22,7 @@ class JelvixProjectsTable extends Doctrine_Table
         $query = Doctrine_Query::create()
             ->select()
             ->from('JelvixProjects jp')
-            ->addOrderBy('jp.id DESC')
+            ->addOrderBy('jp.created_at DESC')
             ->limit(3);
         return $query->execute();
     }

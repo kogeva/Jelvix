@@ -66,21 +66,21 @@
                 <li class="top-decorator"></li>
                 <li class="cm">COOPERATION MODELS</li>
                 <li class="model-element">
-                    <div class="coop-header"><span class="dedicated-team">OFFSHORE DEDICATED TEAM<br><div></div></span></div>
+                    <div class="coop-header"><span class="dedicated-team">OFFSHORE DEDICATED TEAM</span></div>
                     <div class="coop-content">LONG-TERM COMMITMENT TO ESTABLISH AND OPERATE A MANAGED IT ENGINEERING FACILITY FOR THE CLIENT ON THE BASIS OF Jelvix.<br>
                         Best solution for long-term
                         assignments and ongoing cooperation. Works as an
                         extension of a customer's organisation. Fixed monthly cost and no overhead.</div>
                 </li>
                 <li class="model-element">
-                    <div class="coop-header">TIME & MATERIALS</div>
+                    <div class="coop-header"><span class="time-materials">TIME & MATERIALS</span></div>
                     <div class="coop-content">PROJECT IS DELIVERED ON A STANDARD BASIS, PAYMENTS CONDUCTED ACCORDING TO ACTUALLY
                         SPENT HOURS, MORE FLEXIBLE THAN FIXED BUDGET.<br>
                         Particularly good for open-ended, long-term projects where it is hard to make a solid
                     estimation of required efforts or there is a need to constantly add new features/</div>
                 </li>
                 <li class="model-element">
-                    <div class="coop-header">FIXED BUDGET</div>
+                    <div class="coop-header"><span class="fixed-budget">FIXED BUDGET</span></div>
                     <div class="coop-content">PROJECT IS DELIVERED ON A STANDARD BASIS FOR FIXED PRICE.<br>
                         Used for projects with a clear, detailed software requirements specifications
                         and agreed timeline for the project completion. Price is fixed according to the preliminary agreement.

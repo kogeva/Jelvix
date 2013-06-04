@@ -1,23 +1,7 @@
 <div class="projects-container">
     <div class="top-teeth-border-decorator"></div>
     <div class="projects-list-container">
-        <ul class="projects-menu-list">
-            <li class="all button">
-                <a href="#">All</a>
-            </li>
-            <li class="applications button">
-                <a href="#">Applications</a>
-            </li>
-            <li class="others button">
-                <a href="#">Other</a>
-            </li>
-            <li class="other button">
-                <a href="#">Other</a>
-            </li>
-        </ul>
-        <div class="horizontal-line-container">
-            <hr>
-        </div>
+    <?php echo include_partial('projects/projectFilter') ?>
             <div class="projects-content-container" style="float: left; width: 100%">
             <div class="show-project">
                 <div class="show-project-title"><?php echo $project->getTitle()?></div>
@@ -25,16 +9,20 @@
                 <div class="show-project-description-static">Description:</div>
                 <div class="show-project-description"><?php echo sfOutputEscaper::unescape($project->getDescription()) ?></div>
                 <ul class="link-to-container">
+                    <?php if(strlen($project->getIosLink())):?>
                     <li>
                         <a class="link-to-itunes" href="<?php echo $project->getIosLink() ?>">
                             <img src="/images/projects/apple-store.png" alt="app store">
                         </a>
                     </li>
+                    <?php endif;?>
+                    <?php if(strlen($project->getAndroidLink())):?>
                     <li>
                         <a class="link-to-google-market" href="<?php echo $project->getAndroidLink() ?>">
                             <img src="/images/projects/android-store.png" alt="google-market">
                         </a>
                     </li>
+                    <?php endif;?>
                 </ul>
             </div>
         </div>

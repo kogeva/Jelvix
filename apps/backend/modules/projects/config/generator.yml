@@ -19,6 +19,6 @@ generator:
       filter:  ~
       form:    ~
       edit:
-        display: [category_id, title, thumbnail, photo, description, ios_link, android_link, other_link]
+        display: [category_id, title, thumbnail, photo, description, ios_link, android_link, other_link, created_at]
       new:
-        display: [category_id, title, thumbnail, photo, description, ios_link, android_link, other_link]
+        display: [category_id, title, thumbnail, photo, description, ios_link, android_link, other_link, created_at]

@@ -40,7 +40,12 @@ class JelvixProjectsForm extends BaseJelvixProjectsForm
           'mime_types' => 'web_images',
       ));
 
+      $this->validatorSchema['created_at'] = new sfValidatorDateTime(array(
+          'required'   => false,
+          )
+      );
+
       $this->validatorSchema['logo_delete'] = new sfValidatorPass();
-      unset($this['created_at'], $this['updated_at']);
+      unset($this['updated_at']);
   }
 }
