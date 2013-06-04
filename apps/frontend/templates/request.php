@@ -7,6 +7,7 @@
     <?php include_title() ?>
     <link type="text/css" rel="stylesheet" href="/css/font.css">
     <link type="text/css" rel="stylesheet" href="/css/request.css">
+    <meta name="viewport" content="width=1048px">
 </head>
 <body>
 <div class="wrap">

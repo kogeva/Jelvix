@@ -13,6 +13,9 @@ body {
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
+
+    /*min-height: 800px;*/
+    /*max-height: 4024px;*/
 }
 .main {
     margin: 0 auto;
@@ -20,7 +23,7 @@ body {
 }
 
 .container {
-    margin: 25px 0px 100px 0px;
+    margin: 25px 0px 25px 0px;
     background: rgba(0, 0, 0, 0.63);
     width: 100%;
     float: left;

@@ -10,6 +10,20 @@ function checkCurrentMenuElement() {
         $('.header-menu-list-element a:contains("projects")').parent().css({'border-bottom': '1px dashed #fff'});
 }
 
+function autoResizer()
+{
+    pages = ['projects', 'contacts', 'request'];
+    path = window.location.pathname;
+    for(page in pages)
+    {
+        if(path.search(pages[page]) != -1){
+            console.log(path.indexOf(pages[page]));
+            $('.wrap').css({'height' : $(window).height()});
+            console.log('yes');
+        }
+    }
+}
+
 function checkCurrentProjectFilterElement() {
     var search = window.location.search;
     var filters = ['', '?category=Applications', '?category=Design', '?category=Featured']
@@ -55,6 +69,7 @@ function initServicesEntity() {
 }
 
 $(document).ready(function () {
+    autoResizer();
     checkCurrentMenuElement();
     initServicesEntity();
 
