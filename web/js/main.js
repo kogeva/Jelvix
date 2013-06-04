@@ -1,9 +1,13 @@
 function checkCurrentMenuElement() {
 
     $('.header-menu-list-element a').each(function () {
-        if ($(this).attr('href') == document.location.pathname)
+        path = document.location.pathname;
+        if ($(this).attr('href') == path)
             $(this).parent().css({'border-bottom': '1px dashed #fff'});
     });
+
+    if(path == '/projects/1')
+        $('.header-menu-list-element a:contains("projects")').parent().css({'border-bottom': '1px dashed #fff'});
 }
 
 function checkCurrentProjectFilterElement() {

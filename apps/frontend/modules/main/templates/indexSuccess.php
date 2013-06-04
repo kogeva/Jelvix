@@ -3,7 +3,7 @@
         <div class="slider-container">
             <ul class="main-slider">
                 <li class="slider-element"><img src="/images/slides/slide1.png" alt=""></li>
-                <li class="slider-element"><img src="/images/slides/slide2.png" alt=""></li>
+                <li class="slider-element"><img src="/images/slides/slider_main_2.jpg" alt=""></li>
                 <li class="slider-element"><img src="/images/slides/slide3.png" alt=""></li>
             </ul>
         </div>

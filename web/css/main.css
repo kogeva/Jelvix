@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    margin: 25px 0px 25px 0px;
+    margin: 25px 0px 100px 0px;
     background: rgba(0, 0, 0, 0.63);
     width: 100%;
     float: left;
@@ -142,7 +142,7 @@ body {
     /*height: 500px; */
     width: 100%;
     float: left;
-    margin: 17px 0 0px 0;
+    margin: 25px 0 0px 0;
 }
 
 .news-container {
@@ -194,6 +194,7 @@ body {
 }
 
 .news h1 {
+    text-align: left;
     margin: 0 0 10px 0;
 }
 
@@ -327,11 +328,15 @@ body {
 }
 
 .next-pagination .pagination-text-decorator {
-    margin: 4px 12px 0 0;
+    margin: 1px 15px 0 0;
+    font-family: Calibri;
+    font-size: 27px;
 }
 
 .prev-pagination .pagination-text-decorator {
-    margin: 6px 0 0 7px;
+    margin: 3px 0px 0px 7px;
+    font-family: Calibri;
+    font-size: 28px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -403,6 +408,7 @@ body {
 }
 
 .copyriting-informations ul {
+    padding: 0 0 20px 0;
     margin-top: 30px;
     list-style: none;
 }
@@ -523,6 +529,11 @@ body {
 .services-category-filter-buttons .services-filter-button:hover {
     background: url("/images/services/services-sprites.png");
     background-position: 0px 145px;
+    color: #586a85;
+}
+
+.services-category-filter-buttons .services-filter-button a:hover {
+    color: #586a85;
 }
 
 .services-category-filter-buttons .services-filter-button.active {
@@ -580,7 +591,7 @@ body {
     height: 0.5px;
     width: 70%;
     margin-top: 20px;
-    background: #5E5E5E;
+    background: #5d5a5b;
 }
 
 .services-entity-container {
@@ -994,12 +1005,19 @@ body {
 }
 
 .show-project-description {
+    width: 92%;
+    padding: 0 40px 0 30px;
+    margin: 0;
     font-family: Bariol;
     font-size: 22px;
     line-height: 26px;
     text-align: left;
-    margin: 0 40px 40px 40px;
+    /*margin: 0 40px 40px 40px;*/
     float: left;
+}
+
+.show-project-description p {
+    line-height: 24px;
 }
 
 .link-to-container {
@@ -1355,7 +1373,7 @@ body {
 
 .last-five-news-container {
     position: relative;
-    top: -9px;
+    top: -14px;
     width: 233px;
     height: 340px;
     background: #FFF;
@@ -1367,15 +1385,15 @@ body {
     height: 0;
     position: relative;
     left: 58px;
-    top: -28px;
+    top: -30px;
     border-left: 20px solid rgba(0, 0, 0, 0);
     border-right: 20px solid rgba(0, 0, 0, 0);
-    border-bottom: 28px solid #FFF;
+    border-bottom: 40px solid #FFF;
 }
 
 .five-news-list {
     position: relative;
-    top: -35px;
+    top: -45px;
     list-style: none;
     padding: 0;
 }

@@ -77,7 +77,7 @@
                     <div class="coop-content">PROJECT IS DELIVERED ON A STANDARD BASIS, PAYMENTS CONDUCTED ACCORDING TO ACTUALLY
                         SPENT HOURS, MORE FLEXIBLE THAN FIXED BUDGET.<br>
                         Particularly good for open-ended, long-term projects where it is hard to make a solid
-                    estimation of required efforts or there is a need to constantly add new features/</div>
+                    estimation of required efforts or there is a need to constantly add new features</div>
                 </li>
                 <li class="model-element">
                     <div class="coop-header"><span class="fixed-budget">FIXED BUDGET</span></div>
