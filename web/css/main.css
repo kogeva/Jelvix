@@ -1013,13 +1013,13 @@ body {
     font-weight: bold;
     font-family: Bariol;
     font-size: 36px;
-    margin: 70px 0px 40px 30px;
+    margin: 70px 0px 40px 50px;
     width: 90%;
 }
 
 .show-project-description {
     width: 92%;
-    padding: 0 40px 0 30px;
+    padding: 0 40px 0 50px;
     margin: 0;
     font-family: Bariol;
     font-size: 22px;

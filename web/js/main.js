@@ -17,10 +17,12 @@ function autoResizer()
     for(page in pages)
     {
         if(path.search(pages[page]) != -1){
-            console.log(path.indexOf(pages[page]));
-            $('.wrap').css({'height' : $(window).height()});
-            console.log('yes');
-        }
+            if($(window).height() > 1024)
+            {
+                $('.wrap').css({'height' : $(window).height()});
+                console.log($(window).height());
+            }
+    }
     }
 }
 
