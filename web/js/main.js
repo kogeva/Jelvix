@@ -1,3 +1,19 @@
+function detectmob() {
+    if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+        ){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 function checkCurrentMenuElement() {
     path = document.location.pathname;
 
@@ -32,8 +48,7 @@ function autoResizer()
 
     for(page in pages)
     {
-        console.log($('.wrap').height());
-        if(path.search(pages[page]) != -1){
+        if(path.search(pages[page]) != -1 && detectmob()){
             if($('.wrap').height() < 1700)
             {
                 $('.wrap').css({'height' : $(window).height()});
