@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('textarea').jqte();
+    nicEditors.allTextAreas({fullPanel : true, maxHeight : 100});
 });

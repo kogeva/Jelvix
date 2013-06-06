@@ -1,7 +1,7 @@
 function checkCurrentMenuElement() {
+    path = document.location.pathname;
 
     $('.header-menu-list-element a').each(function () {
-        path = document.location.pathname;
         if ($(this).attr('href') == path)
             $(this).parent().css({'border-bottom': '1px dashed #fff'});
     });
@@ -12,17 +12,34 @@ function checkCurrentMenuElement() {
 
 function autoResizer()
 {
-    pages = ['projects', 'contacts', 'request'];
+    pages = ['projects', 'contacts', 'request', 'news'];
     path = window.location.pathname;
+    console.log(window);
+
+//    window.setTimeout(function(){
+//        for(page in pages)
+//        {
+//            if(path.search(pages[page]) != -1){
+//            console.log($('.wrap').height());
+//                if($(window).height() > 1400)
+//                {
+//                    $('.wrap').css({'height' : $(window).height()});
+//                    console.log($(window).height());
+//                }
+//            }
+//        }
+//    },3000);
+
     for(page in pages)
     {
+        console.log($('.wrap').height());
         if(path.search(pages[page]) != -1){
-            if($(window).height() > 1024)
+            if($('.wrap').height() < 1700)
             {
                 $('.wrap').css({'height' : $(window).height()});
                 console.log($(window).height());
             }
-    }
+        }
     }
 }
 
@@ -71,7 +88,6 @@ function initServicesEntity() {
 }
 
 $(document).ready(function () {
-    autoResizer();
     checkCurrentMenuElement();
     initServicesEntity();
 
@@ -159,6 +175,7 @@ $(document).ready(function () {
         });
 
         currentSlide(1);
+        autoResizer();
     });
 
     $('.sevices-entity').on('mouseenter', function () {

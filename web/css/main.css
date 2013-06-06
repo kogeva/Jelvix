@@ -120,6 +120,8 @@ body {
 }
 
 .header-menu-list-element a {
+    position: relative;
+    top: -1.5px;
     display: block;
     text-decoration: none;
     color: white;
@@ -1125,21 +1127,21 @@ body {
 
 .top-image .text {
     float: left;
-    margin: 20px 23px;
+    margin: 20px 25px;
     color: #FFF;
     font-family: Bariol;
     text-align: justify;
-    font-size: 34px;
+    font-size: 32px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .top-image .text {
         float: left;
-        margin: 30px 23px;
+        margin: 20px 25px;
         color: #FFF;
         font-family: Bariol;
         text-align: justify;
-        font-size: 34px;
+        font-size: 32px;
     }
 }
 
@@ -1726,6 +1728,8 @@ body {
 
 .contact-input:focus {
     border: 3px solid #64dcb8;
+    position: relative;
+    right: 2px;
 }
 
 .contacts-form-container form {
@@ -1904,7 +1908,8 @@ body {
 .stories-text-container .author {
     float: left;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     color: #6ac3f7;
     font-size: 22px;
 }
@@ -1912,6 +1917,8 @@ body {
 .stories-text-container .position {
     float: left;
     margin-top: 5px;
+    margin-left: 10px;
+    font-size: 12px;
 }
 .circles-decorator {
     float: left;
