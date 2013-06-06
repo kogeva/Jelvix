@@ -228,7 +228,7 @@ body {
     -webkit-border-radius: 10px;
 }
 
-.news p {
+.news div {
     margin: 0;
     text-align: justify;
     font-family: bariol;
@@ -1908,6 +1908,7 @@ body {
     margin-right: 10px;
     font-style: italic;
     float: left;
+    text-align: justify;
 }
 
 .stories-text-container .author {
