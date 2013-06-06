@@ -155,6 +155,10 @@ body {
     width: 100%;
 }
 
+.news {
+    width: 83%;
+}
+
 .news-container .top-teeth-border-decorator {
     background: url("/images/news/top-teeth-border-decorator.png") repeat-x;
     float: left;
