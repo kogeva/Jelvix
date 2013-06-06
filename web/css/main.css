@@ -156,16 +156,16 @@ body {
 }
 
 .news-container .top-teeth-border-decorator {
-    background: url("/images/top-teeth-border-decorator.png") repeat-x;
+    background: url("/images/news/top-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 11px;
+    height: 22px;
     width: 100%;
 }
 
 .news-container .bottom-teeth-border-decorator {
-    background: url("/images/bottom-teeth-border-decorator.png") repeat-x;
+    background: url("/images/news/bottom-teeth-border-decorator.png") repeat-x;
     float: left;
-    height: 11px;
+    height: 22px;
     width: 100%;
 }
 
@@ -1901,6 +1901,7 @@ body {
 
 .stories-text-container .text {
     margin-left: 10px;
+    margin-right: 10px;
     font-style: italic;
     float: left;
 }
