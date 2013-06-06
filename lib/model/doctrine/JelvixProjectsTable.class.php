@@ -14,7 +14,12 @@ class JelvixProjectsTable extends Doctrine_Table
      */
     public static function getInstance()
     {
-        return Doctrine_Core::getTable('JelvixProjects');
+        //return Doctrine_Core::getTable('JelvixProjects');
+        return Doctrine_Query::create()
+            ->select()
+            ->from('JelvixProjects jp')
+            ->orderBy('jp.created_at DESC')
+            ->execute();
     }
 
     public static function  getThreeRecentProjects()

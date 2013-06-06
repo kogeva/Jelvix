@@ -32,7 +32,8 @@ class JelvixNewsTable extends Doctrine_Table
     {
         $query = Doctrine_Query::create()
             ->from('JelvixNews jn')
-            ->where('jn.is_active = 1');
+            ->where('jn.is_active = 1')
+            ->addOrderBy('jn.created_at DESC');
 
         return $query;
     }
