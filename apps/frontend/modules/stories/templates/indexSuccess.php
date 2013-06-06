@@ -17,7 +17,7 @@
                     <div class="stories-text-container">
                         <div class="text">
                             <span class="quotes top">“</span>
-                        <span><?php echo $story->getText()?><span class="quotes">„</span>
+                        <span><?php echo $story->getText()?><span class="quotes bottom">„</span>
                         </span>
                         </div>
                         <div class="author"><?php echo $story->getAuthor()?></div>
@@ -34,7 +34,7 @@
                 <div class="stories-text-container">
                     <div class="text">
                         <span class="quotes top">“</span>
-                        <span><?php echo $story->getText()?><span class="quotes">„</span>
+                        <span><?php echo $story->getText()?><span class="quotes bottom">„</span>
                         </span>
                     </div>
                     <div class="author"><?php echo $story->getAuthor()?></div>

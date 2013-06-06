@@ -228,7 +228,7 @@ body {
     -webkit-border-radius: 10px;
 }
 
-.news div {
+.news p {
     margin: 0;
     text-align: justify;
     font-family: bariol;
@@ -1952,8 +1952,13 @@ body {
     line-height: 1px;
 }
 
+.quotes.bottom {
+    position: relative;
+    top: 2px;
+}
+
 .quotes.top {
-    margin: 15px 5px 0px -21px;
+    margin: 11px 5px 0px -21px;
     float: left;
 }
 
