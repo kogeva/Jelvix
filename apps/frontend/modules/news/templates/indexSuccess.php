@@ -13,9 +13,8 @@
                 <h1>
                     <a href="<?php echo url_for2('jelvix_news_show', array('id' => $news->getId())) ?>"><?php echo $news->getTitle() ?></a>
                 </h1>
-
-                <p><?php echo sfOutputEscaper::unescape(substr($news->getText(), 0, 160)) . ' ...' ?></p>
-
+                <? $html = new Slice(sfOutputEscaper::unescape($news->getText()), 800);?>
+                <p><?php echo $html?></p>
                 <div class="news-create-date">
                     <?php echo date('M j, Y', strtotime($news->getCreatedAt())) ?>
                     <hr>

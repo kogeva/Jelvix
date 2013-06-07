@@ -157,6 +157,11 @@ body {
 
 .news {
     width: 83%;
+    text-align: left;
+}
+
+.news p div {
+    text-align: left;
 }
 
 .news-container .top-teeth-border-decorator {

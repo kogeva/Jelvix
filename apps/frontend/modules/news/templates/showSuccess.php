@@ -4,7 +4,7 @@
         <div class="news-show-title"><?php echo $news->getTitle() ?></div>
         <div class="news-show-date"><?php echo date('M j, Y', strtotime($news->getCreatedAt())) ?></div>
         <img class="news-show-img" src="<?php echo $news->getLogo() ?>" alt="">
-        <div class="news-show-text"><?php echo sfOutputEscaper::unescape($news->getText()) ?></div>
+        <div class="news-show-text"><?php echo str_replace('&nbsp;', ' ', sfOutputEscaper::unescape($news->getText())) ?></div>
     </div>
     <div class="bottom-teeth-border-decorator"></div>
 </div>
