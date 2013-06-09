@@ -22,42 +22,45 @@
             </div>
         <?php endforeach ?>
         <div class="pagination-container">
-            <div class="pagination">
-                <?php if ($pager->getFirstPage() != $pager->getPage()): ?>
-                    <a class="prev-pagination"
-                       href="/frontend_dev.php/news?page=<?php echo $pager->getPreviousPage() ?>">
-                        <div class="pagination-text-decorator">Prev</div>
-                    </a>
-                <?php else: ?>
-                    <a class="prev-pagination prev-no-active">
-                        <div class="pagination-text-decorator">Prev</div>
-                    </a>
-                <?php endif ?>
-                <?php foreach ($pager->getLinks() as $page): ?>
-                    <?php if ($page == $pager->getPage()): ?>
-                        <a class="active-page not-active-page">
-                            <div class="pagination-text-decorator">
-                                <?php echo $page ?>
-                            </div>
+            <span>
+                <ul class="pagination">
+                    <li>
+                        <?php if ($pager->getFirstPage() != $pager->getPage()):?>
+                        <a class="prev-pagination" href="<?php echo url_for2('jelvix_news', array('page' => $pager->getPreviousPage()))?>">
+                            <div class="pagination-text-decorator">Prev</div>
                         </a>
-                    <?php else: ?>
-                        <a class="active-page" href="/frontend_dev.php/news?page=<?php echo $page ?>">
-                            <div class="pagination-text-decorator">
-                                <?php echo $page ?>
-                            </div>
-                        </a>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-                <?php if ($pager->getPage() != $pager->getLastPage()): ?>
-                    <a class="next-pagination" href="/frontend_dev.php/news?page=<?php echo $pager->getNextPage() ?>">
-                        <div class="pagination-text-decorator">Next</div>
-                    </a>
-                <?php else: ?>
-                    <a class="next-pagination next-not-active" ">
-                        <div class="pagination-text-decorator">Next</div>
-                    </a>
-                <?php endif ?>
-            </div>
+                        <?php else:?>
+                            <a class="prev-pagination prev-no-active"><div class="pagination-text-decorator">Prev</div></a>
+                        <?php endif ?>
+                    </li>
+                    <?php foreach ($pager->getLinks() as $page): ?>
+                        <li>
+                        <?php if ($page == $pager->getPage()): ?>
+                            <a class="active-page not-active-page">
+                                <div class="pagination-text-decorator">
+                                    <?php echo $page ?>
+                                </div>
+                            </a>
+                        <?php else: ?>
+                            <a class="active-page" href="/frontend_dev.php/news?page=<?php echo $page ?>">
+                                <div class="pagination-text-decorator">
+                                    <?php echo $page ?>
+                                </div>
+                            </a>
+                        <?php endif; ?>
+                        </li>
+                    <?php endforeach; ?>
+                    <li>
+                        <?php if ($pager->getPage() != $pager->getLastPage()):?>
+                            <a class="next-pagination" href="<?php echo url_for2('jelvix_news', array('page' => $pager->getNextPage()))?>">
+                                <div class="pagination-text-decorator">Next</div>
+                            </a>
+                        <?php else:?>
+                            <a class="next-pagination next-not-active"><div class="pagination-text-decorator">Next</div></a>
+                        <?php endif ?>
+                    </li>
+                </ul>
+            </span>
         </div>
     </div>
     <div class="bottom-teeth-border-decorator"></div>

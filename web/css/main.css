@@ -252,13 +252,20 @@ body {
 /*******pagination********/
 .pagination-container {
     margin: 0 auto;
-    width: 400px;
+    padding-bottom: 25px;
 }
 
 .pagination-container .pagination {
-    margin: 10px 0px 50px 0px;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    margin: 25px auto 0;
+}
+
+.pagination li {
     float: left;
 }
+
 .prev-pagination {
     background: url("/images/news/pagination-buttons.png");
     background-repeat: no-repeat;
@@ -312,7 +319,8 @@ body {
 }
 
 .pagination-text-decorator {
-    margin-top: 8px;
+    font-family: Calibri;
+    margin-top: 7px;
 }
 
 .next-pagination {
@@ -342,28 +350,32 @@ body {
 }
 
 .next-pagination .pagination-text-decorator {
-    margin: 1px 15px 0 0;
+    margin: 0px 15px 0 0;
     font-family: Calibri;
     font-size: 27px;
 }
 
 .prev-pagination .pagination-text-decorator {
-    margin: 3px 0px 0px 7px;
+    margin: 0px 0px 0px 6px;
     font-family: Calibri;
     font-size: 28px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .pagination-text-decorator {
-        margin-top: 11px;
+        margin-top: 7px;
+        font-family: Calibri;
     }
 
     .next-pagination .pagination-text-decorator {
-        margin: 4px 8px 0 0;
+        font-family: Calibri;
+        margin: 0px 15px 0 0;
     }
 
     .prev-pagination .pagination-text-decorator {
-        margin: 4px 0 0 0px;
+        margin: 0px 0px 0px 6px;
+        font-family: Calibri;
+        font-size: 28px;
     }
 }
 

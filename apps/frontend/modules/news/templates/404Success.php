@@ -14,7 +14,7 @@
         <div class="head-404">
             <?php echo '«Not all those who wander are lost.»' ?>
         </div>
-        <div class="tollden">-J.R.R Tolkien</div>
+        <div class="tollden">-J.R.R. Tolkien</div>
         <div class="head-404">
             ...but you are
         </div>

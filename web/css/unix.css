@@ -1,0 +1,42 @@
+.main-bottom-header .text {
+    padding-top: 5px;
+}
+
+.project-link span {
+    padding: 4px 10px 0px 10px;
+}
+
+.about-header .text {
+    margin: 12px 0 5px 20px;
+}
+
+.presents-list {
+    line-height: 25px;
+}
+
+.model-element .coop-header {
+    line-height: 18px;
+}
+
+.services-category-filter-buttons .services-filter-button a {
+    line-height: 35px;
+}
+
+.projects-menu-list .button a {
+    line-height: 35px;
+}
+
+.prev-pagination .pagination-text-decorator {
+    line-height: 46px;
+}
+.next-pagination .pagination-text-decorator {
+    line-height: 46px;
+}
+
+.submit-button {
+    padding-top: 7px;
+}
+
+.bottom-form-container button span {
+    margin: 4px 0 0 15px;
+}

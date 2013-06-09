@@ -1,3 +1,10 @@
+function detectUnix(){
+    if(navigator.platform.match(/linux/i)){
+        return true;
+    }
+    return false;
+}
+
 function detectmob() {
     if( navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
@@ -30,22 +37,6 @@ function autoResizer()
 {
     pages = ['projects', 'contacts', 'request', 'news'];
     path = window.location.pathname;
-    console.log(window);
-
-//    window.setTimeout(function(){
-//        for(page in pages)
-//        {
-//            if(path.search(pages[page]) != -1){
-//            console.log($('.wrap').height());
-//                if($(window).height() > 1400)
-//                {
-//                    $('.wrap').css({'height' : $(window).height()});
-//                    console.log($(window).height());
-//                }
-//            }
-//        }
-//    },3000);
-
     for(page in pages)
     {
         if(path.search(pages[page]) != -1 && detectmob()){
@@ -103,6 +94,12 @@ function initServicesEntity() {
 }
 
 $(document).ready(function () {
+
+    if(detectUnix() || detectmob())
+    {
+        $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/unix.css">');
+    }
+
     checkCurrentMenuElement();
     initServicesEntity();
 
