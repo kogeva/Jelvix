@@ -31,7 +31,6 @@ class contactsActions extends sfActions
         if ($form->isValid())
         {
             $job = $form->save();
-var_dump(sfConfig::get('app_mails_contact')) or die;
             $this->sendEmail(
                 sfConfig::get('app_mails_contact'),
                 'contacts@jelvix.com',

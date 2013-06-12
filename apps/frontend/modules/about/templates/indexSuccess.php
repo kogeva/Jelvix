@@ -4,10 +4,10 @@
         <div class="about-left-container">
             <div class="content-container">
                 <div class="top-image" >
-                    <div class="text">JELVIX IS INNOVATIONAL FAST GROWING
+                    <div class="text"><span style="font-weight: bold;">JELVIX IS INNOVATIONAL FAST GROWING
                      COMPANY IN  SOFTWARE DEVELOPMENT
                      PROVIDING     PROFESIONAL    SERVICES
-                     AROUND  THE  WORLD.<br>
+                     AROUND  THE  WORLD.</span><br>
                      We  are  founded  in 2010  with  a  headquarters  in  Israel
                 and  Ukraine. Our  specialization is complex  sophisticated
                 projects and mobile applications.
@@ -66,21 +66,21 @@
                 <li class="top-decorator"></li>
                 <li class="cm">COOPERATION MODELS</li>
                 <li class="model-element">
-                    <div class="coop-header"><span class="dedicated-team">OFFSHORE DEDICATED TEAM</span></div>
+                    <div class="coop-header"><span class="dedicated-team"><strong>OFFSHORE DEDICATED TEAM</strong></span></div>
                     <div class="coop-content">LONG-TERM COMMITMENT TO ESTABLISH AND OPERATE A MANAGED IT ENGINEERING FACILITY FOR THE CLIENT ON THE BASIS OF Jelvix.<br>
                         Best solution for long-term
                         assignments and ongoing cooperation. Works as an
                         extension of a customer's organisation. Fixed monthly cost and no overhead.</div>
                 </li>
                 <li class="model-element">
-                    <div class="coop-header"><span class="time-materials">TIME & MATERIALS</span></div>
+                    <div class="coop-header"><span class="time-materials"><strong>TIME & MATERIALS</strong></span></div>
                     <div class="coop-content">PROJECT IS DELIVERED ON A STANDARD BASIS, PAYMENTS CONDUCTED ACCORDING TO ACTUALLY
                         SPENT HOURS, MORE FLEXIBLE THAN FIXED BUDGET.<br>
                         Particularly good for open-ended, long-term projects where it is hard to make a solid
                     estimation of required efforts or there is a need to constantly add new features</div>
                 </li>
                 <li class="model-element">
-                    <div class="coop-header"><span class="fixed-budget">FIXED BUDGET</span></div>
+                    <div class="coop-header"><span class="fixed-budget"><strong>FIXED BUDGET</strong></span></div>
                     <div class="coop-content">PROJECT IS DELIVERED ON A STANDARD BASIS FOR FIXED PRICE.<br>
                         Used for projects with a clear, detailed software requirements specifications
                         and agreed timeline for the project completion. Price is fixed according to the preliminary agreement.

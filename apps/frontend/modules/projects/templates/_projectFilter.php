@@ -13,5 +13,5 @@
     </li>
 </ul>
 <div class="horizontal-line-container">
-    <hr>
+    <div class="horizontal-line"></div>
 </div>

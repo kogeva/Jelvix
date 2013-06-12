@@ -16,7 +16,7 @@
             </li>
         </ul>
         <div class="horizontal-line-container">
-            <hr>
+            <div class="horizontal-line"></div>
         </div>
         <div class="load-data-container">
             <?php  include_partial('servicesEntity', array( 'services' => $services))?>

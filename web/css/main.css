@@ -1,18 +1,18 @@
 body {
     margin: 0;
-    /*zoom: 95%;*/
+    background: url("/images/texture_jelvix.jpg");
+    /*background-repeat: no-repeat;*/
+    /*-webkit-background-size: 100% 100%;*/
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
 }
 .wrap {
     position: relative;
     z-index: -2;
     float: left;
     width: 100%;
-    background: url("/images/texture_jelvix.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+
 
     /*min-height: 800px;*/
     /*max-height: 4024px;*/
@@ -533,12 +533,12 @@ body {
     height: 18px;
     width: 100%;
     position: relative;
-    top: -1px;
+    top: -2px;
 }
 
 .services-category-filter-buttons {
     margin: 0 auto;
-    width: 560px;
+    width: 580px;
     list-style: none;
 }
 
@@ -558,11 +558,20 @@ body {
     color: #586a85;
 }
 
-.services-category-filter-buttons .services-filter-button a:hover {
-    color: #586a85;
+/*.services-category-filter-buttons .services-filter-button a:hover {*/
+    /*color: #586a85;*/
+/*}*/
+
+.services-category-filter-buttons .services-filter-button a {
+    outline: none;
 }
 
 .services-category-filter-buttons .services-filter-button.active {
+    background: url("/images/services/services-sprites.png");
+    background-position: 1px 29px;
+}
+
+.services-category-filter-buttons .services-filter-button.active:hover {
     background: url("/images/services/services-sprites.png");
     background-position: 1px 29px;
 }
@@ -608,16 +617,17 @@ body {
 }
 
 .services-list-container .horizontal-line-container {
+    padding-top: 15px;
     margin: 0 auto;
     width: 100%;
     float: left;
 }
 
-.services-list-container .horizontal-line-container hr {
-    height: 0.5px;
-    width: 70%;
-    margin-top: 20px;
-    background: #5d5a5b;
+.horizontal-line {
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 1px solid rgb(253, 253, 253);
+    border-top: 1px solid rgb(134, 134, 134);
 }
 
 .services-entity-container {
@@ -864,6 +874,7 @@ body {
 }
 
 .horizontal-line-container {
+    padding-top: 15px;
     margin: 0 auto;
     width: 100%;
     float: left;
@@ -901,7 +912,10 @@ body {
 .project-list-element {
     float: left;
     list-style: none;
-    margin: 15px 22px 15px 32px;
+    margin: 15px 32px 15px 32px;
+}
+.slidesContainer {
+    margin-left: 16px;
 }
 
 .slidesPagination {
@@ -1435,6 +1449,7 @@ body {
 }
 
 .small-news-element {
+    overflow: hidden;
     margin: 0px 10px 0px 10px;
     width: 212px;
     height: 63px;
@@ -1843,6 +1858,7 @@ body {
 }
 
 .entity-contact .text {
+    font-style: italic;
     margin-left: 10px;
     margin-top: 3px;
     float: left;

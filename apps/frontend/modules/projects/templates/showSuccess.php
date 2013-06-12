@@ -6,8 +6,10 @@
             <div class="show-project">
                 <div class="show-project-title"><?php echo $project->getTitle()?></div>
                 <img src="<?php echo $project->getPhoto() ?>" class="show-project-photo" alt="">
+                <?php if(!empty($project->description)):?>
                 <div class="show-project-description-static">Description:</div>
                 <div class="show-project-description"><?php echo sfOutputEscaper::unescape($project->getDescription()) ?></div>
+                <?php  endif ?>
                 <ul class="link-to-container">
                     <?php if(strlen($project->getIosLink())):?>
                     <li>

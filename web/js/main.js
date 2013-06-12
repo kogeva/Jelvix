@@ -29,24 +29,37 @@ function checkCurrentMenuElement() {
             $(this).parent().css({'border-bottom': '1px dashed #fff'});
     });
 
-    if(path == '/projects/1')
+    if(path.indexOf('news') != -1)
+        $('.header-menu-list-element a:contains("news")').parent().css({'border-bottom': '1px dashed #fff'});
+
+    if(path.indexOf('projects') != -1)
         $('.header-menu-list-element a:contains("projects")').parent().css({'border-bottom': '1px dashed #fff'});
 }
 
 function autoResizer()
 {
-    pages = ['projects', 'contacts', 'request', 'news'];
-    path = window.location.pathname;
-    for(page in pages)
+    if($('.container').height() < 600)
+        $('.wrap').css({'height' : $(window).height()});
+    if(detectmob())
     {
-        if(path.search(pages[page]) != -1 && detectmob()){
-            if($('.wrap').height() < 1700)
-            {
-                $('.wrap').css({'height' : $(window).height()});
-                console.log($(window).height());
-            }
-        }
+        $('body').css({
+            'zoom' : '78%',
+            'background-image': 'url("/images/jelvix_texture.jpg")',
+            'background-size' : '40% 40%'
+        });
     }
+
+//    pages = ['projects', 'contacts', 'request', 'news'];
+//    path = window.location.pathname;
+//    for(page in pages)
+//    {
+//        if(path.search(pages[page]) != -1 && detectmob()){
+//            if($('.wrap').height() < 1700)
+//            {
+//                $('.wrap').css({'height' : $(window).height()});
+//            }
+//        }
+//    }
 }
 
 function checkCurrentProjectFilterElement() {
@@ -94,7 +107,6 @@ function initServicesEntity() {
 }
 
 $(document).ready(function () {
-
     if(detectUnix() || detectmob())
     {
         $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/unix.css">');

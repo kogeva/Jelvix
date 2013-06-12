@@ -6,7 +6,6 @@
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
     <?php include_title() ?>
-    <meta name="viewport" content="width=1224px">
 </head>
 <body>
 <div class="wrap">
