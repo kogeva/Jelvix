@@ -95,7 +95,7 @@ function initServicesEntity() {
 }
 
 $(document).ready(function () {
-    if(detectUnix() || detectmob())
+    if(detectUnix())
     {
         $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/unix.css">');
     }
