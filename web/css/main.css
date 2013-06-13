@@ -5,7 +5,7 @@ body {
     overflow-y:auto;
     margin: 0;
     background: url("/images/texture_jelvix.jpg");
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     /*-webkit-background-size: 100% 100%;*/
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
