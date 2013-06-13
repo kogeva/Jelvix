@@ -1,17 +1,17 @@
 html {min-width: 960px;}
 body {
     margin: 0;
+    background: url("/images/texture_jelvix.jpg");
+    /*background-repeat: no-repeat;*/
+    /*-webkit-background-size: 100% 100%;*/
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .wrap {
     float: left;
     width: 100%;
-    background: url("/images/texture_jelvix.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
 }
 
 .main {
