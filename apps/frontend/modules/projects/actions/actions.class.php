@@ -15,7 +15,7 @@ class projectsActions extends sfActions
         $this->getResponse()->setTitle(sfConfig::get('app_titles_projects'));
         $category = $request->getParameter('category', false);
         if(!$category)
-            $this->projects = $this->getRoute()->getObjects();
+            $this->projects = JelvixProjectsTable::getInstance();
         else
         {
             $this->projectCategory = Doctrine_Core::getTable('JelvixProjectCategory')->findByName($category);

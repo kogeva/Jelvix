@@ -55,7 +55,7 @@
                     <?php foreach($lastFiveNews as $news): ?>
                     <li class="small-news-element">
                         <a href="<?php echo url_for2('jelvix_news_show', array('id' => $news->getId()))?>">
-                            <?php echo substr($news->getTitle(), 0, 45) ?> ...
+                            <?php echo substr($news->getTitle(), 0, 20) ?> ...
                         </a>
                     </li>
                     <?php endforeach?>

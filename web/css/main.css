@@ -1,7 +1,11 @@
+html {
+    /*overflow-y:hidden;*/
+}
 body {
+    overflow-y:auto;
     margin: 0;
     background: url("/images/texture_jelvix.jpg");
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     /*-webkit-background-size: 100% 100%;*/
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -224,8 +228,8 @@ body {
 
 .news .news-logo {
     margin-right: 50px;
-    max-width: 277px;
-    max-height: 183;
+    width: 277px;
+    height: 277px;
     float: left;
     border: 5px solid #76E5C1;
     border-radius: 10px;
@@ -948,11 +952,11 @@ body {
     outline: none;
 }
 
-.slidesPrevious:hover {
+.slidesPrevious.clicked {
     background-position: 0 0px;
 }
 
-.slidesNext:hover {
+.slidesNext.clicked {
     background-position: 0 118px;
 }
 
@@ -982,7 +986,7 @@ body {
     position: relative;
     top: -265px;
     left: 0;
-    width: 260px;
+    width: 261px;
     height: 260px;
     display: block;
 }
@@ -1472,7 +1476,7 @@ body {
     text-align: left;
     font-family: Calibri;
     font-size: 18px;
-    padding: 5px;
+    padding: 21px 5px 0 5px;
 }
 
 .last-five-news-shadow {
@@ -1751,7 +1755,7 @@ body {
     color: #000;
     outline: none;
     float: left;
-    border: solid 1px #999;
+    border: solid 3px #999;
     width: 230px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 15px;
@@ -1764,8 +1768,6 @@ body {
 
 .contact-input:focus {
     border: 3px solid #64dcb8;
-    position: relative;
-    right: 2px;
 }
 
 .contacts-form-container form {
@@ -1905,8 +1907,8 @@ body {
 
 .hr {
     margin: 0 auto;
-    border-top: 1px solid #5d5a5b;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid rgb(253, 253, 253);
+    border-top: 1px solid rgb(134, 134, 134);
     width: 970px;
 }
 

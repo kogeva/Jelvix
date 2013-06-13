@@ -48,18 +48,6 @@ function autoResizer()
             'background-size' : '40% 40%'
         });
     }
-
-//    pages = ['projects', 'contacts', 'request', 'news'];
-//    path = window.location.pathname;
-//    for(page in pages)
-//    {
-//        if(path.search(pages[page]) != -1 && detectmob()){
-//            if($('.wrap').height() < 1700)
-//            {
-//                $('.wrap').css({'height' : $(window).height()});
-//            }
-//        }
-//    }
 }
 
 function checkCurrentProjectFilterElement() {
@@ -196,6 +184,10 @@ $(document).ready(function () {
             loaded: function () {
                 currentSlide(1);
             }
+        });
+
+        $('.slidesNext, .slidesPrevious').bind('mousedown mouseup', function(){
+            $(this).toggleClass('clicked');
         });
 
         currentSlide(1);
