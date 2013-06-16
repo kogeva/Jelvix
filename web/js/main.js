@@ -5,6 +5,18 @@ function detectUnix(){
     return false;
 }
 
+function detectIos()
+{
+    if(navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+        )
+        return true;
+    else
+        return false;
+}
+
 function detectmob() {
     if( navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
@@ -43,10 +55,14 @@ function autoResizer()
     if(detectmob())
     {
         $('body').css({
-            'zoom' : '78%',
+            'zoom' : '79%',
             'background-image': 'url("/images/jelvix_texture.jpg")',
             'background-size' : '40% 40%'
         });
+
+//        $('.services-category-filter-buttons .design').css({'background-position': '0px -30px'});
+//        $('.services-category-filter-buttons .grow').css({'background-position': '0px -30px'});
+//        $('.services-category-filter-buttons .development').css({'background-position': '0px -30px'});
     }
 }
 
@@ -102,6 +118,12 @@ $(document).ready(function () {
 
     checkCurrentMenuElement();
     initServicesEntity();
+    if(detectmob())
+    {
+        window.setTimeout(function(){
+            $('.slider-element').not('.bx-clone').css({'width': '980px'})
+        }, 1000);
+    }
 
     $('.services-filter-button').bind('mousedown', function () {
         $(this).addClass('active');
@@ -145,12 +167,21 @@ $(document).ready(function () {
     });
 
     $('.main-slider').bxSlider({
-        slideWidth: 980,
+        slideWidth: 979,
         adaptiveHeight: true,
         speed: 2000,
         auto: true,
         pause: 8000
     });
+
+    if(detectIos())
+    {
+        $('.model-element .coop-header').css({'font-size': '14px'});
+        $('.bx-wrapper img').css({'height': '298px'});
+        window.setTimeout(function(){
+            $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
+        }, 300);
+    }
 
     $('.review-text-container').bind('mouseenter mouseleave', function () {
         $(this).siblings('.review-decorator').toggleClass("hover");

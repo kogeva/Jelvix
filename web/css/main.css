@@ -94,8 +94,8 @@ body {
 
 .request-button span {
     float: left;
-    margin-top: 15px;
-    margin-left: 55px;
+    margin-top: 16px;
+    margin-left: 65px;
     font-size: 20px;
     font-family: Calibri, Arial;
 }
@@ -135,7 +135,21 @@ body {
     font-weight: bold;
     padding: 0 10px 0 10px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#eeeeee,Strength=2)
+    progid:DXImageTransform.Microsoft.Blur(pixelradius=5, enabled='true');
 }
+
+.ie8n9 .header-menu-list-element a {
+    color: #333;
+    zoom: 1;         /* required to give the element layout for filters */
+    filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=2);
+}
+.ie8n9 .header-menu-list-element a {
+    color: #fff;
+    content: attr(data-innertext);
+    position: absolute;
+}
+
 
 .header-menu-list-element a:active {
     background: red;
@@ -433,7 +447,7 @@ body {
     float: left;
     width: 100%;
     color: #FFF;
-    font-family: Caviar-Custom;
+    font-family: Caviar-Dreams;
     font-size: 16px;
 }
 
@@ -595,7 +609,7 @@ body {
 
 .services-category-filter-buttons .design {
     background: url("/images/services/services-sprites.png");
-    background-position: 0px -29px;
+    background-position: 0px 14.5em;
 }
 
 .services-category-filter-buttons .design:hover {
@@ -604,7 +618,7 @@ body {
 
 .services-category-filter-buttons .development {
     background: url("/images/services/services-sprites.png");
-    background-position: 0px -58px;
+    background-position: 0px 12.7em;
 }
 
 .services-category-filter-buttons .development:hover {
@@ -613,7 +627,7 @@ body {
 
 .services-category-filter-buttons .grow {
     background: url("/images/services/services-sprites.png");
-    background-position: 0px -87px;
+    background-position: 0px 10.9em;
 }
 
 .services-category-filter-buttons .grow:hover {
@@ -665,7 +679,7 @@ body {
 
 .services-entity-container .cervices-entity-body {
     float: left;
-    width: 234px;
+    width: 233px;
 }
 
 .services-entity-container .cervices-entity-head {
@@ -693,63 +707,65 @@ body {
 
 .category-architect-top {
     background: url("/images/services/flags.png") no-repeat;
-    background-position: 0px -74px;
+    /*background-position: 2px -99px;*/
+    background-position: 0.08em -99px;
 }
 
 .category-architect-body {
     background: url("/images/services/flags-center.png");
-    background-position: -234px 0px;
+    /*background-position: -233px 0px;*/
+    background-position: 101.86em 0px;
 }
 
 .category-architect-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -115px;
+    background-position: 2px -169px;
 
 }
 
 /*hover architect*/
 
 .category-architect-top.hover {
-    background-position: 0px -358px;
+    background-position: -233px -99px;
 }
 
 .category-architect-body.hover {
-    background-position: -1204px 0;
+    background-position: 43.7em 0;
 }
 
 .category-architect-bottom.hover {
-    background-position: 0px -394px;
+    background-position: -233px -547px;
 }
 
 /*design*/
 
 .category-design-top {
     background: url("/images/services/flags.png");
-    background-position: 0px -148px;
+    background-position: 0px -200px;
 }
 
 .category-design-body {
     background: url("/images/services/flags-center.png");
-    background-position: -475px 0;
+    background-position: -466px 0;
 }
 
 .category-design-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -179px;
+    background-position: 0px -240px;
 }
 
 /*hover design*/
 
 .category-design-top.hover {
-    background-position: 0px 168px;
+    background-position: 233px 200px;
 }
 
 .category-design-body.hover {
-    background-position: -1455px 0;
+    background-position: 29.15em 0;
 }
 
 .category-design-bottom.hover {
-    background-position: 0px -469px;
+    background-position: 233px -238px;
 }
 
 /*development*/
@@ -761,60 +777,61 @@ body {
 
 .category-development-body {
     background: url("/images/services/flags-center.png");
-    background-position: 1px 0px;
+    background-position: 0px 0px;
 }
 
 .category-development-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -40px;
+    background-position: 0px -50px;
 }
 
 /*hover development*/
 
 .category-development-top.hover {
     background: url("/images/services/flags.png");
-    background-position: 0px 316px;
+    background-position: 233px 0px;
 }
 
 .category-development-body.hover {
-    background-position: 1037.5px 0px;
+    background-position: 58.23em 0px;
 }
 
 .category-development-bottom.hover {
     background: url("/images/services/flags.png");
-    background-position: 0px 276px;
+    background-position: 233px -48px;
 }
 
 /*grow*/
 
 .category-grow-top {
     background: url("/images/services/flags.png");
-    background-position: 0px -812px;
+    background-position: 0.1555em -699px;
 }
 
 .category-grow-body {
     background: url("/images/services/flags-center.png");
-    background-position: -718px 0px;
+    /*background-position: -699px 0px;*/
+    background-position: 72.785em 0px;
 }
 
 .category-grow-bottom {
     background: url("/images/services/flags.png");
-    background-position: 0px -847px;
+    background-position: 2px -742px;
 }
 
 /*hover grow*/
 
 .category-grow-top.hover {
-    background-position: 0px -509px;
+    background-position: 233px -699px;
 }
 
 .category-grow-body.hover {
-    background-position: -1699px 0px;
+    background-position: 14.56em 0px;
 }
 
 .category-grow-bottom.hover {
     background: url("/images/services/flags.png");
-    background-position: 0px -550px;
+    background-position: 233px -740px;
 }
 
 /************************Projects*********************/

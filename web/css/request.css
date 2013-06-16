@@ -92,7 +92,7 @@ body {
     float: left;
     width: 100%;
     color: #000;
-    font-family: Caviar-Custom;
+    font-family: Caviar-Dreams;
     font-size: 16px;
     text-align: center;
     font-weight: bold;
@@ -126,14 +126,14 @@ body {
     text-decoration: none;
     background: url('/images/request/request-sprites.png');
     background-repeat: no-repeat;
-    width: 89px;
-    height: 49px;
+    width: 92px;
+    height: 56px;
 }
 
 .back-button:hover {
     background: url('/images/request/request-sprites.png');
     background-repeat: no-repeat;
-    background-position: -3px -53px;
+    background-position: -93px -45px;
 }
 
 .back-button .text {

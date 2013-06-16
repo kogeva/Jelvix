@@ -3,7 +3,7 @@
         <li class="services-list-element">
             <ul class="services-list-element-container">
                 <?php foreach ($service as $item): ?>
-                    <?php $smallText = substr(sfOutputEscaperGetterDecorator::unescape($item->getText()), 0, rand(150, 300)) ?>
+                    <?php $smallText = new Slice(sfOutputEscaperGetterDecorator::unescape($item->getText()),rand(150, 300))?>
                     <li class="cdscadscdsca">
                         <div class="services-entity-container">
                             <div class="sevices-entity">
@@ -14,8 +14,8 @@
                                         <?php echo $item->getTitle() ?>
                                     </div>
                                     <div class="entity-text category-architect">
-                                        <div class="fulltext"><?php echo new Slice(sfOutputEscaperGetterDecorator::unescape($item->getText()), 800) ?></div>
-                                        <div class="small-text"><?php echo $smallText .'...' ?></div>
+                                        <div class="fulltext"><?php echo sfOutputEscaperGetterDecorator::unescape($item->getText())?></div>
+                                        <div class="small-text"><?php echo $smallText ?></div>
                                     </div>
                                 </div>
                                 <div
