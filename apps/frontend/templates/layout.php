@@ -89,7 +89,7 @@
                 <div class="header-request-container">
                     <div class="request-button-container">
                         <a class="request-button" href="<?php echo url_for('jelvix_request_new') ?>">
-                            <span>Work with us</span>
+                            <span>Request a quote</span>
                         </a>
                     </div>
                     <div class="or-call-use">or call us 1234567XXX</div>
