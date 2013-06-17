@@ -105,6 +105,11 @@ body {
     margin: 10px;
 }
 
+.request-button .request {
+    margin-left: 52px;
+}
+
+
 .header-menu-container {
     background: url("/images/background-head-menu.png");
     float: left;
@@ -135,8 +140,6 @@ body {
     font-weight: bold;
     padding: 0 10px 0 10px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-    filter: progid:DXImageTransform.Microsoft.Glow(Color=#eeeeee,Strength=2)
-    progid:DXImageTransform.Microsoft.Blur(pixelradius=5, enabled='true');
 }
 
 .ie8n9 .header-menu-list-element a {

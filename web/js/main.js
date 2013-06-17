@@ -111,6 +111,9 @@ function initServicesEntity() {
 }
 
 $(document).ready(function () {
+    if (navigator.userAgent.match(/msie/i))
+        $('.presents-list').css({'line-height' : '23px'});
+
     if(detectUnix())
     {
         $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/unix.css">');
