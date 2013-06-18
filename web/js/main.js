@@ -17,6 +17,14 @@ function detectIos()
         return false;
 }
 
+function detectAndroid()
+{
+    if( navigator.userAgent.match(/Android/i))
+        return true;
+    else
+        return false;
+}
+
 function detectmob() {
     if( navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
@@ -59,10 +67,6 @@ function autoResizer()
             'background-image': 'url("/images/jelvix_texture.jpg")',
             'background-size' : '40% 40%'
         });
-
-//        $('.services-category-filter-buttons .design').css({'background-position': '0px -30px'});
-//        $('.services-category-filter-buttons .grow').css({'background-position': '0px -30px'});
-//        $('.services-category-filter-buttons .development').css({'background-position': '0px -30px'});
     }
 }
 
@@ -117,6 +121,11 @@ $(document).ready(function () {
     if(detectUnix())
     {
         $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/unix.css">');
+    }
+
+    if(detectAndroid())
+    {
+        $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/for_android.css">');
     }
 
     checkCurrentMenuElement();

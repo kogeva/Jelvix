@@ -1,0 +1,128 @@
+.category-architect-top {
+    background: url("/images/services/flags.png") no-repeat;
+    /*background-position: 2px -99px;*/
+    background-position: 0.08em -99px;
+}
+
+.category-architect-body {
+    background: url("/images/services/flags-center.png");
+    /*background-position: -233px 0px;*/
+    background-position: 101.86em 0px;
+}
+
+.category-architect-bottom {
+    background: url("/images/services/flags.png");
+    background-position: 2px -169px;
+
+}
+
+/*hover architect*/
+
+.category-architect-top.hover {
+    background-position: -233px -99px;
+}
+
+.category-architect-body.hover {
+    background-position: 43.7em 0;
+}
+
+.category-architect-bottom.hover {
+    background-position: -233px -547px;
+}
+
+/*design*/
+
+.category-design-top {
+    background: url("/images/services/flags.png");
+    background-position: 0px -200px;
+}
+
+.category-design-body {
+    background: url("/images/services/flags-center.png");
+    background-position: -466px 0;
+}
+
+.category-design-bottom {
+    background: url("/images/services/flags.png");
+    background-position: 0px -240px;
+}
+
+/*hover design*/
+
+.category-design-top.hover {
+    background-position: 233px 200px;
+}
+
+.category-design-body.hover {
+    background-position: 29.15em 0;
+}
+
+.category-design-bottom.hover {
+    background-position: 233px -238px;
+}
+
+/*development*/
+
+.category-development-top {
+    background: url("/images/services/flags.png");
+    background-position: 0px 0px;
+}
+
+.category-development-body {
+    background: url("/images/services/flags-center.png");
+    background-position: 0px 0px;
+}
+
+.category-development-bottom {
+    background: url("/images/services/flags.png");
+    background-position: 0px -50px;
+}
+
+/*hover development*/
+
+.category-development-top.hover {
+    background: url("/images/services/flags.png");
+    background-position: 233px 0px;
+}
+
+.category-development-body.hover {
+    background-position: 58.23em 0px;
+}
+
+.category-development-bottom.hover {
+    background: url("/images/services/flags.png");
+    background-position: 233px -48px;
+}
+
+/*grow*/
+
+.category-grow-top {
+    background: url("/images/services/flags.png");
+    background-position: 0.1555em -699px;
+}
+
+.category-grow-body {
+    background: url("/images/services/flags-center.png");
+    /*background-position: -699px 0px;*/
+    background-position: 72.785em 0px;
+}
+
+.category-grow-bottom {
+    background: url("/images/services/flags.png");
+    background-position: 2px -742px;
+}
+
+/*hover grow*/
+
+.category-grow-top.hover {
+    background-position: 233px -699px;
+}
+
+.category-grow-body.hover {
+    background-position: 14.56em 0px;
+}
+
+.category-grow-bottom.hover {
+    background: url("/images/services/flags.png");
+    background-position: 233px -740px;
+}
