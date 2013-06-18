@@ -40,3 +40,7 @@
 .bottom-form-container button span {
     margin: 4px 0 0 15px;
 }
+
+.header-botton {
+    line-height: 6px;
+}

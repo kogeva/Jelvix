@@ -126,3 +126,17 @@
     background: url("/images/services/flags.png");
     background-position: 233px -740px;
 }
+
+.projects-menu-list .button {
+    float: left;
+    background: url("/images/services/services-sprites.png");
+    background-position: 0px 10.8em;
+}
+
+.presents-list {
+    line-height: 26px;
+}
+
+.entity-decorator {
+    line-height: 7px;
+}

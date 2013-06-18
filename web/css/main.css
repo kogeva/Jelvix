@@ -246,7 +246,7 @@ body {
 .news .news-logo {
     margin-right: 50px;
     width: 277px;
-    height: 277px;
+    height: 185px;
     float: left;
     border: 5px solid #76E5C1;
     border-radius: 10px;
@@ -500,7 +500,7 @@ body {
 
 .news-show-text {
     margin: 50px 80px 50px 80px;
-    width: 85%;
+    width: 84.4%;
     float: left;
     text-align: left;
     font-family: bariol;
