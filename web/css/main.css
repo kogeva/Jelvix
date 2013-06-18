@@ -709,132 +709,129 @@ body {
 
 
 .category-architect-top {
-    background: url("/images/services/flags.png") no-repeat;
-    /*background-position: 2px -99px;*/
-    background-position: 0.08em -99px;
+    background: url("/images/services/flags-sprites.png") no-repeat;
+    background-position: -700px 0px;
 }
 
 .category-architect-body {
-    background: url("/images/services/flags-center.png");
-    /*background-position: -233px 0px;*/
-    background-position: 101.86em 0px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -933px 0px;
 }
 
 .category-architect-bottom {
-    background: url("/images/services/flags.png");
-    background-position: 2px -169px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -1166px 0px;
 
 }
 
 /*hover architect*/
 
 .category-architect-top.hover {
-    background-position: -233px -99px;
+    background-position: -3496px 0px;
 }
 
 .category-architect-body.hover {
-    background-position: 43.7em 0;
+    background-position: -3729px 0;
 }
 
 .category-architect-bottom.hover {
-    background-position: -233px -547px;
+    background-position: -3962px 0px;
 }
 
 /*design*/
 
 .category-design-top {
-    background: url("/images/services/flags.png");
-    background-position: 0px -200px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -1398px 0px;
 }
 
 .category-design-body {
-    background: url("/images/services/flags-center.png");
-    background-position: -466px 0;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -1631px 0;
 }
 
 .category-design-bottom {
-    background: url("/images/services/flags.png");
-    background-position: 0px -240px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -1864px 0px;
 }
 
 /*hover design*/
 
 .category-design-top.hover {
-    background-position: 233px 200px;
+    background-position: -4194px 0px;
 }
 
 .category-design-body.hover {
-    background-position: 29.15em 0;
+    background-position: -4427px 0;
 }
 
 .category-design-bottom.hover {
-    background-position: 233px -238px;
+    background-position: -4660px 0px;
 }
 
 /*development*/
 
 .category-development-top {
-    background: url("/images/services/flags.png");
+    background: url("/images/services/flags-sprites.png");
     background-position: 0px 0px;
 }
 
 .category-development-body {
-    background: url("/images/services/flags-center.png");
-    background-position: 0px 0px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -233px 0px;
 }
 
 .category-development-bottom {
-    background: url("/images/services/flags.png");
-    background-position: 0px -50px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -466px 0px;
 }
 
 /*hover development*/
 
 .category-development-top.hover {
-    background: url("/images/services/flags.png");
-    background-position: 233px 0px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: 2796px 0px;
 }
 
 .category-development-body.hover {
-    background-position: 58.23em 0px;
+    background-position: 2563px 0px;
 }
 
 .category-development-bottom.hover {
-    background: url("/images/services/flags.png");
-    background-position: 233px -48px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: 2330px 0px;
 }
 
 /*grow*/
 
 .category-grow-top {
-    background: url("/images/services/flags.png");
-    background-position: 0.1555em -699px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -2097px 0px;
 }
 
 .category-grow-body {
-    background: url("/images/services/flags-center.png");
-    /*background-position: -699px 0px;*/
-    background-position: 72.785em 0px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -2330px 0px;
 }
 
 .category-grow-bottom {
-    background: url("/images/services/flags.png");
-    background-position: 2px -742px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: -2563px 0px;
 }
 
 /*hover grow*/
 
 .category-grow-top.hover {
-    background-position: 233px -699px;
+    background-position: 699px 0px;
 }
 
 .category-grow-body.hover {
-    background-position: 14.56em 0px;
+    background-position: 466px 0px;
 }
 
 .category-grow-bottom.hover {
-    background: url("/images/services/flags.png");
-    background-position: 233px -740px;
+    background: url("/images/services/flags-sprites.png");
+    background-position: 233px 0px;
 }
 
 /************************Projects*********************/
