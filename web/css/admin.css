@@ -20,3 +20,17 @@
 .delete_file label {
     width: 150px;
 }
+
+#sf_admin_container h1 {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 10px 10px;
+}
+
+.delete_file {
+    margin: 6px 0 0 0;
+}
+
+#sf_admin_container .delete_file label{
+    width: 140px;
+}
