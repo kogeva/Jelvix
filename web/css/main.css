@@ -79,6 +79,7 @@ body {
 
 .request-button {
     background: url("/images/request_buttons.png");
+    background-position: -2px -5px;
     float: left;
     color: white;
     width: 213px;
@@ -89,7 +90,7 @@ body {
 
 .request-button:hover {
     background: url("/images/request_buttons.png");
-    background-position: -1px -62px;
+    background-position: -2px -64px;
 }
 
 .request-button span {

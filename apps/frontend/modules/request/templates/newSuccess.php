@@ -46,7 +46,7 @@
                     </li>
                 </ul>
                 <div class="bottom-form-container">
-                    <button type="submit"><span>Submit</span></button>
+                    <button type="submit"></button>
                     <div class="notification">We will contact you within two business days.</div>
                 </div>
             </div>

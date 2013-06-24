@@ -347,7 +347,7 @@ body {
 .bottom-form-container button {
     cursor: pointer;
     background: url('/images/request/request-sprites.png');
-    background-position: 0px -182px;
+    background-position: 0px -185px;
     background-repeat: no-repeat;
     width: 180px;
     height: 88px;
@@ -373,7 +373,7 @@ body {
 
 .bottom-form-container button:hover {
     background: url('/images/request/request-sprites.png');
-    background-position: -1px -270px;
+    background-position: 0px -274px;
     background-repeat: no-repeat;
 }
 
