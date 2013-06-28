@@ -69,6 +69,8 @@ body {
 }
 
 .request-phone-conteiner {
+    font-family: Calibri;
+    font-style: italic;
     background: url("/images/phone-request.png") no-repeat;
     height: 40px;
     float: left;
