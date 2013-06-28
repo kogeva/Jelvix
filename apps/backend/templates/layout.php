@@ -59,6 +59,7 @@
           <li class="menu-item"><?php echo link_to('Stories', 'jelvix_stories')?></li>
           <li class="menu-item"><?php echo link_to('Contact', 'jelvix_contacts')?></li>
           <li class="menu-item"><?php echo link_to('Request', 'jelvix_request')?></li>
+          <li class="menu-item"><?php echo link_to('SEO', 'jelvix_module')?></li>
           <?php if($sf_user->isAuthenticated()):?>
             <li class="menu-item" style="float: right; margin-right: 22px;"><a href="/admin.php/guard/logout">Logout</a></li>
           <?php endif?>
