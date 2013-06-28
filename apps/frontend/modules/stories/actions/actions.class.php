@@ -17,7 +17,9 @@ class storiesActions extends sfActions
      */
     public function executeIndex(sfWebRequest $request)
     {
-        $this->getResponse()->setTitle(sfConfig::get('app_titles_stories'));
+        $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('stories');
+        $this->getResponse()->setTitle($module->getTitle());
+        $this->getResponse()->addMeta('description', $module->getDescription());
         $strories = Doctrine_Core::getTable('JelvixStories')->findAll()->getData();
         $this->stories = $this->cutArrayToPart($strories);
 

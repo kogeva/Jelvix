@@ -14,7 +14,8 @@ generator:
     config:
       actions: ~
       fields:  ~
-      list:    ~
+      list:
+        display: [name, email_address, phone,company]
       filter:  ~
       form:    ~
       edit:    ~

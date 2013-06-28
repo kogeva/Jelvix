@@ -12,7 +12,9 @@ class mainActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-      $this->getResponse()->setTitle(sfConfig::get('app_titles_main'));
+      $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('main');
+      $this->getResponse()->setTitle($module->getTitle());
+      $this->getResponse()->addMeta('description', $module->getDescription());
       $this->projects = JelvixProjectsTable::getThreeRecentProjects();
   }
 }

@@ -17,7 +17,9 @@ class requestActions extends sfActions
      */
     public function executeNew(sfWebRequest $request)
     {
-        $this->getResponse()->setTitle(sfConfig::get('app_titles_request'));
+        $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('request');
+        $this->getResponse()->setTitle($module->getTitle());
+        $this->getResponse()->addMeta('description', $module->getDescription());
         $this->setLayout('request');
 
         $this->form = new JelvixRequestForm();

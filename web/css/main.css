@@ -8,8 +8,8 @@ body {
     /*background-repeat: no-repeat;*/
     /*-webkit-background-size: 100% 100%;*/
     -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
     background-size: 100% 100%;
+    /*-o-background-size: 100% 100%;*/
 }
 .wrap {
     position: relative;
@@ -230,6 +230,7 @@ body {
 }
 
 .news h1 {
+    line-height: 24px;
     text-align: left;
     margin: 0 0 10px 0;
 }
@@ -495,7 +496,7 @@ body {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    max-width: 800px;
+    max-width: 850px;
     max-height: 500px;
 }
 
@@ -1816,6 +1817,7 @@ body {
     background-repeat: no-repeat;
     width: 164px;
     height: 56px;
+    padding-bottom: 10px;
 }
 
 .submit-button:hover {
@@ -1855,6 +1857,10 @@ body {
     width: 100%;
 }
 
+.entity-skype .text {
+    line-height: 18px;
+}
+
 .entity-head {
     font-size: 28px;
     border-bottom: 2px solid #C0C0C0;
@@ -1872,7 +1878,7 @@ body {
     text-align: center;
     color: #969696;
     font-size: 48px;
-    height: 5px;
+    height: 10px;
     width: 185px;
     line-height: 1px;
 }

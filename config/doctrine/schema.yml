@@ -87,3 +87,9 @@ JelvixStories:
         foreignType: many
         type: one
         onDelete: CASCADE
+
+JelvixModule:
+  columns:
+    name:        { type: string(250), notnull: true }
+    title:       { type: text, notnull: true }
+    description: { type: text }

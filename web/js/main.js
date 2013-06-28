@@ -123,6 +123,14 @@ $(document).ready(function () {
         $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/unix.css">');
     }
 
+    if(navigator.userAgent.indexOf("Opera") != -1)
+    {
+        $('.model-element .coop-header').css({'font-size': '14px'});
+        height = $('.wrap').height();
+        width = $('body').width();
+        $('body').css({'background-size': width+'px'+' '+height+'px'});
+    }
+
     if(detectAndroid())
     {
         $('head').append('<link rel="stylesheet" type="text/css" media="screen" href="/css/for_android.css">');

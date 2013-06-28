@@ -12,7 +12,9 @@ class projectsActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-        $this->getResponse()->setTitle(sfConfig::get('app_titles_projects'));
+        $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('projects');
+        $this->getResponse()->setTitle($module->getTitle());
+        $this->getResponse()->addMeta('description', $module->getDescription());
         $category = $request->getParameter('category', false);
         if(!$category)
             $this->projects = JelvixProjectsTable::getInstance();

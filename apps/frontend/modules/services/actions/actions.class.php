@@ -12,7 +12,9 @@ class servicesActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-      $this->getResponse()->setTitle(sfConfig::get('app_titles_services'));
+      $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('services');
+      $this->getResponse()->setTitle($module->getTitle());
+      $this->getResponse()->addMeta('description', $module->getDescription());
       $this->services = $this->getRoute()->getObjects();
       $this->services = $this->services->getData();
       $this->services = $this->buildDataForFlasgs($this->services);

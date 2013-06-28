@@ -12,7 +12,9 @@ class contactsActions extends sfActions
 {
     public function executeNew(sfWebRequest $request)
     {
-        $this->getResponse()->setTitle(sfConfig::get('app_titles_contacts'));
+        $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('contacts');
+        $this->getResponse()->setTitle($module->getTitle());
+        $this->getResponse()->addMeta('description', $module->getDescription());
         $this->contactForm = new JelvixContactsForm();
     }
 

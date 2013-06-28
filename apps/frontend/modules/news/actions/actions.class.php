@@ -12,7 +12,9 @@ class newsActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-        $this->getResponse()->setTitle(sfConfig::get('app_titles_news'));
+        $module = Doctrine_Core::getTable('JelvixModule')->findOneByName('news');
+        $this->getResponse()->setTitle($module->getTitle());
+        $this->getResponse()->addMeta('description', $module->getDescription());
         $this->pager = new sfDoctrinePager('JelvixNews', 1);
         $this->pager->setQuery(JelvixNewsTable::getQueryActiveNews());
         $this->pager->setMaxPerPage(4);

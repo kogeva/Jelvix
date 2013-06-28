@@ -34,3 +34,7 @@
 #sf_admin_container .delete_file label{
     width: 140px;
 }
+.error_list {
+    float: right;
+    margin: 0;
+}
