@@ -623,8 +623,8 @@
 			// Set CSS for each slide
 			this.slides.css({
 				position: "absolute",
-				top: 0, 
-				left: 0,
+				top: 0,
+//				left: 0,
 				zIndex: 0,
 				display: "none"
 			});

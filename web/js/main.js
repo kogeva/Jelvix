@@ -245,6 +245,11 @@ $(document).ready(function () {
         autoResizer();
     });
 
+    if($('.slidesNext'))
+    {
+        $('.slide-page').css({'left' : '-14px'});
+    }
+
     $('.sevices-entity').on('mouseenter', function () {
         $(this).find('div').each(function () {
             $(this).addClass("hover");
