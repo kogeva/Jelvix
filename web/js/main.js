@@ -204,9 +204,9 @@ $(document).ready(function () {
         $('.prev-pagination .pagination-text-decorator').css({'line-height': '43px'});
         $('.next-pagination .pagination-text-decorator').css({'line-height': '41px'});
         $('.bx-wrapper img').css({'height': '298px'});
-        window.setTimeout(function(){
-            $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
-        }, 300);
+//        window.setTimeout(function(){
+//            $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
+//        }, 300);
     }
 
     $('.review-text-container').bind('mouseenter mouseleave', function () {
