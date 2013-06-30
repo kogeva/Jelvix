@@ -199,7 +199,7 @@ $(document).ready(function () {
         $('.model-element .coop-header').css({'font-size': '14px'});
         $('.projects-menu-list .button').css({'background-position' : '0px -88px'});
         $('.submit-button').css({'padding-top': '10px'});
-        $('.submit-button').css({'padding-left': '20px'});
+        $('.submit-button').css({'padding-left': '30px'});
         $('.bx-wrapper img').css({'height': '298px'});
         window.setTimeout(function(){
             $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
