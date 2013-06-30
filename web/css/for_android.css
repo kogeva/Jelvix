@@ -138,5 +138,25 @@
 }
 
 .entity-decorator {
-    line-height: 7px;
+    line-height: 9px;
+}
+
+.request-button span {
+    margin-top: 14px;
+}
+
+.prev-pagination .pagination-text-decorator {
+    margin: 2px 0px 0px 6px;
+}
+
+.pagination-text-decorator {
+    margin-top: 9px;
+}
+
+.next-pagination .pagination-text-decorator {
+    margin: 2px 15px 0 0;
+}
+
+.submit-button {
+    padding-top: 10px;
 }

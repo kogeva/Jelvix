@@ -94,7 +94,7 @@
                             <span class="request">Request a quote</span>
                         </a>
                     </div>
-                    <div class="or-call-use">or call us 1234567XXX</div>
+                    <div class="or-call-use"><strong>or call us 1234567XXX</strong></div>
                 </div>
                 <div class="copyriting-informations">
                     <ul>

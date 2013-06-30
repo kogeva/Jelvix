@@ -212,7 +212,7 @@ body {
 
 .form-input .valid-error {
     opacity: 0;
-    margin-top: 7px;
+    margin-bottom: 7px;
     margin-left: 10px;
     float: left;
     width: 300px;

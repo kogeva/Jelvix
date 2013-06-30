@@ -22,6 +22,10 @@ class JelvixNewsForm extends BaseJelvixNewsForm
           'template'  => '<div>%file%<br />%input%<br /><div class="delete_file">%delete% %delete_label%</div></div>',
       ));
 
+      $this->widgetSchema['small_text'] = new sfWidgetFormTextarea(array(
+          'label' => 'Preview text',
+      ));
+
       $this->validatorSchema['logo'] = new sfValidatorFile(array(
           'required'   => false,
           'path'       => sfConfig::get('sf_upload_dir').'/img',

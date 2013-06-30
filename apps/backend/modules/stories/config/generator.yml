@@ -15,6 +15,7 @@ generator:
       actions: ~
       fields:  ~
       list:
+        sort: [createds_at, asc]
         display: [author, text]
       filter:  ~
       form:    ~

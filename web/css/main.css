@@ -499,7 +499,7 @@ body {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    max-width: 850px;
+    width: 855px;
     max-height: 500px;
 }
 
@@ -1082,8 +1082,8 @@ body {
 }
 
 .show-project-description {
-    width: 92%;
-    padding: 0 40px 0 50px;
+    width: 90.2%;
+    padding: 0 50px 0 50px;
     margin: 0;
     font-family: Bariol;
     font-size: 22px;
@@ -1604,7 +1604,7 @@ body {
 }
 
 .project-element {
-    margin: 0 0 20px 40px;
+    margin: 0 0 20px 41.3px;
     width: 300px;
     float: left;
 }
@@ -1822,6 +1822,7 @@ body {
     width: 164px;
     height: 56px;
     padding-bottom: 10px;
+    padding-left: 2px;
 }
 
 .submit-button:hover {
@@ -1852,7 +1853,7 @@ body {
 }
 
 .entity-contact {
-    padding: 15px 15px 0px 15px;
+    padding: 10px 15px 0px 15px;
     line-height: 24px;
     text-align: left;
     font-family: Calibri;
@@ -1872,7 +1873,7 @@ body {
 }
 
 .entity-address {
-    margin-top: 14px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 20px;

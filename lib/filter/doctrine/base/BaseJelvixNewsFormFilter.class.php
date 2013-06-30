@@ -14,6 +14,7 @@ abstract class BaseJelvixNewsFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'title'      => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'small_text' => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'logo'       => new sfWidgetFormFilterInput(),
       'text'       => new sfWidgetFormFilterInput(),
       'is_active'  => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
@@ -23,6 +24,7 @@ abstract class BaseJelvixNewsFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'title'      => new sfValidatorPass(array('required' => false)),
+      'small_text' => new sfValidatorPass(array('required' => false)),
       'logo'       => new sfValidatorPass(array('required' => false)),
       'text'       => new sfValidatorPass(array('required' => false)),
       'is_active'  => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
@@ -49,6 +51,7 @@ abstract class BaseJelvixNewsFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'         => 'Number',
       'title'      => 'Text',
+      'small_text' => 'Text',
       'logo'       => 'Text',
       'text'       => 'Text',
       'is_active'  => 'Boolean',
