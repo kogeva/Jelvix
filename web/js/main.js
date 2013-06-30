@@ -201,8 +201,8 @@ $(document).ready(function () {
         $('.submit-button').css({'padding-top': '10px'});
         $('.submit-button').css({'padding-left': '25px'});
         $('.entity-decorator').css({'line-height': '8px'});
-        $('.prev-pagination .pagination-text-decorator').css({'line-height': '50px'});
-        $('.next-pagination .pagination-text-decorator').css({'line-height': '50px'});
+        $('.prev-pagination .pagination-text-decorator').css({'line-height': '45px'});
+        $('.next-pagination .pagination-text-decorator').css({'line-height': '45px'});
         $('.bx-wrapper img').css({'height': '298px'});
         window.setTimeout(function(){
             $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
