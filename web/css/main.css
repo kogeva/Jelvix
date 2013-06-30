@@ -610,6 +610,7 @@ body {
     font-family: Calibri;
     font-size: 20px;
     outline: none;
+    line-height: 26px;
 }
 
 .services-category-filter-buttons .architect {
