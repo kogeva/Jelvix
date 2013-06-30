@@ -337,11 +337,11 @@ body {
 }
 
 .not-active-page {
-    background-position: 0px 47px;
+    background-position: 0px 48px;
 }
 
 .not-active-page:hover {
-    background-position: 0px 47px;
+    background-position: 0px 48px;
 }
 
 .pagination-text-decorator {
@@ -390,7 +390,7 @@ body {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .pagination-text-decorator {
         margin-right: 2px;
-        margin-top: 9px;
+        margin-top: 8px;
         font-family: Calibri;
     }
 
