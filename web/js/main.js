@@ -201,7 +201,7 @@ $(document).ready(function () {
         $('.submit-button').css({'padding-top': '10px'});
         $('.submit-button').css({'padding-left': '25px'});
         $('.entity-decorator').css({'line-height': '8px'});
-        $('.pagination-text-decorator').css({'margin-top': '9px'});
+        $('.pagination-text-decorator').css({'margin-top': '5px'});
         $('.next-pagination .pagination-text-decorator').css({'margin' : '2px 15px 0 0'});
         $('.bx-wrapper img').css({'height': '298px'});
         window.setTimeout(function(){
