@@ -140,7 +140,7 @@ body {
     font-family: Calibri;
     font-size: 22px;
     float: left;
-    margin: 12px 0px 0px 30px;
+    margin: 14px 0px 0px 30px;
 }
 
 .header-arrow {
@@ -211,6 +211,7 @@ body {
 }
 
 .form-input .valid-error {
+    font-size: 18px;
     opacity: 0;
     margin-bottom: 7px;
     margin-left: 10px;
