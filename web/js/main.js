@@ -200,7 +200,7 @@ $(document).ready(function () {
         $('.projects-menu-list .button').css({'background-position' : '0px -88px'});
         $('.submit-button').css({'padding-top': '10px'});
         $('.submit-button').css({'padding-left': '25px'});
-        $('.entity-decorator').css({'line-height': '9px'});
+        $('.entity-decorator').css({'line-height': '8px'});
         $('.bx-wrapper img').css({'height': '298px'});
         window.setTimeout(function(){
             $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
