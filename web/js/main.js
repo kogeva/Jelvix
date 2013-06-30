@@ -201,7 +201,6 @@ $(document).ready(function () {
         $('.submit-button').css({'padding-top': '10px'});
         $('.submit-button').css({'padding-left': '25px'});
         $('.entity-decorator').css({'line-height': '8px'});
-        $('.pagination-text-decorator').css({'line-height': '6px'});
         $('.prev-pagination .pagination-text-decorator').css({'line-height': '43px'});
         $('.next-pagination .pagination-text-decorator').css({'line-height': '41px'});
         $('.bx-wrapper img').css({'height': '298px'});
