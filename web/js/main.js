@@ -198,15 +198,13 @@ $(document).ready(function () {
     {
         $('.model-element .coop-header').css({'font-size': '14px'});
         $('.projects-menu-list .button').css({'background-position' : '0px -88px'});
+        $('.services-category-filter-buttons .services-filter-button a').css({'line-height': '28px'});
         $('.submit-button').css({'padding-top': '10px'});
         $('.submit-button').css({'padding-left': '25px'});
         $('.entity-decorator').css({'line-height': '8px'});
         $('.prev-pagination .pagination-text-decorator').css({'line-height': '43px'});
         $('.next-pagination .pagination-text-decorator').css({'line-height': '41px'});
         $('.bx-wrapper img').css({'height': '298px'});
-//        window.setTimeout(function(){
-//            $('.bx-wrapper li').css({'width' : '980px', 'overflow': 'hidden'});
-//        }, 300);
     }
 
     $('.review-text-container').bind('mouseenter mouseleave', function () {
