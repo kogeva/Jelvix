@@ -20,8 +20,11 @@ class projectsActions extends sfActions
             $this->projects = JelvixProjectsTable::getInstance();
         else
         {
-            $this->projectCategory = Doctrine_Core::getTable('JelvixProjectCategory')->findByName($category);
-            $this->projects = $this->projectCategory->get(0)->getJelvixProjects();
+            $projects = JelvixProjectsTable::getProjectsByCategoryName($category);
+            $this->projects = $projects;
+            //var_dump($projects->getData()) or die;
+            //$this->projectCategory = Doctrine_Core::getTable('JelvixProjectCategory')->findByName($category);
+            //$this->projects = $this->projectCategory->get(0)->getJelvixProjects();
         }
         $this->projects = $this->arrayChunk($this->projects->getData());
     }

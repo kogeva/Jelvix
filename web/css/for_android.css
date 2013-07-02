@@ -160,3 +160,28 @@
 .submit-button {
     padding-top: 10px;
 }
+
+.services-category-filter-buttons .services-filter-button {
+    height: 27px;
+}
+
+.services-category-filter-buttons .design {
+    background-position: 0px 14.515em;
+}
+
+.services-category-filter-buttons .development {
+    background-position: 0px 12.64em;
+}
+
+.services-category-filter-buttons .grow {
+    background-position: 0px 10.8em;
+}
+
+.projects-menu-list .button {
+    background-position: 0px 10.85em;
+    height: 27px;
+}
+
+.bottom-form-container .notification {
+    margin: 36px 0 60px 15px;
+}

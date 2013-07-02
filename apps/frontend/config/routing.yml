@@ -32,6 +32,7 @@ jelvix_projects:
     model: JelvixProjects
     type: list
     actions: [show, list]
+    column: title
     module: projects
     prefix_path: /projects
 

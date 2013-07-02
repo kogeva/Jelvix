@@ -31,4 +31,16 @@ class JelvixProjectsTable extends Doctrine_Table
             ->limit(3);
         return $query->execute();
     }
+
+    public static function getProjectsByCategoryName($name)
+    {
+        $q = Doctrine_Query::create()
+            ->from('JelvixProjects jp')
+            ->leftJoin('jp.JelvixProjectCategory pc')
+            ->andWhere('pc.name = ?', $name)
+            ->orderBy('jp.created_at DESC')
+        ;
+//        print_r($q->getSqlQuery()); die();
+        return $q->execute();
+    }
 }

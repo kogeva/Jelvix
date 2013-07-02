@@ -17,5 +17,6 @@ class ppActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      $this->privacy_policy = Doctrine_Core::getTable('PrivacyPolicy')->findOneById('1');
   }
 }

@@ -40,7 +40,7 @@ JelvixProjects:
     android_link: { type: string(255) }
     other_link:   { type: string(255) }
   relations:
-      JelvixServicesCategory:
+      JelvixProjectCategory:
         class: JelvixProjectCategory
         local: category_id
         foreign: id
@@ -94,3 +94,7 @@ JelvixModule:
     name:        { type: string(250), notnull: true }
     title:       { type: text, notnull: true }
     description: { type: text }
+
+PrivacyPolicy:
+  columns:
+    text:  { type: clob(16777215), notnull: true }
