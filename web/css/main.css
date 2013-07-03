@@ -104,6 +104,10 @@ body {
     font-family: Calibri, Arial;
 }
 
+.request.bottom {
+    margin-top: 14px;
+}
+
 .request-button-image {
     float: left;
     margin: 10px;
@@ -933,7 +937,7 @@ body {
 
 .slide-page {
     float: left;
-    margin: 0 10px 0 11.5px;
+    margin: 0 10px 0 12.5px;
     width: 1004px;
     height: 990px;
 }
