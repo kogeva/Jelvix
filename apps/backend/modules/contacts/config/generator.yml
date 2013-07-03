@@ -15,6 +15,7 @@ generator:
       actions: ~
       fields:  ~
       list:
+        display: [name, email_address, subject]
         sort: [created_at, desc]
       filter:  ~
       form:    ~
