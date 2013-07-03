@@ -252,6 +252,7 @@ $(document).ready(function () {
 
     if($('.slidesNext'))
     {
+        $('.slide-page').css({'margin' : '0 10px 0 11.5px'});
         $('.slide-page').css({'left' : '-14px'});
     }
 
