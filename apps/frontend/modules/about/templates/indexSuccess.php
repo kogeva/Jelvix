@@ -23,7 +23,7 @@
                         <div class="one element">We deliver fully personalized approach standing back to back in
                             cooperation with our customers.</div>
                         <div class="two element">Quality control at all stages of project development.</div>
-                        <div class="three element">We bring our clients results, taking a bottom-line approach to each project focusing on the client's specific business and the beast ways to achieve them.</div>
+                        <div class="three element">We bring our clients results, taking a bottom-line approach to each project focusing on the client's specific business and the best ways to achieve them.</div>
                         <div class="four element">We enjoy building long-term business relationships.</div>
                         <div class="five element">We sincerely believe in the advancement of technology and are always
                             pushing the envelope to influence change and design better  solutions.</div>
