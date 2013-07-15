@@ -9,6 +9,9 @@
         <a href="<?php echo url_for2('jelvix_projects', array('category' => 'Design')) ?>">Design</a>
     </li>
     <li class="featured button">
+        <a href="<?php echo url_for2('jelvix_projects', array('category' => 'Web')) ?>">Web</a>
+    </li>
+    <li class="featured button">
         <a href="<?php echo url_for2('jelvix_projects', array('category' => 'Featured')) ?>">Featured</a>
     </li>
 </ul>

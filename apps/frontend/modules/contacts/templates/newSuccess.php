@@ -56,9 +56,9 @@
                 <li class="contact-box">
                     <ul class="entity-contact">
                         <li class="entity-head">Ukraine</li>
-                        <li class="entity-address">38 Kirova street,
-                            <br>Second Floor
-                            <br>Kharkov, 61001
+                        <li class="entity-address">18 Otakara Yarosha,
+                            <br>Ninth Floor
+                            <br>Kharkov, 61072
                         </li>
                         <li class="entity-decorator">---</li>
                         <li class="entity-email">

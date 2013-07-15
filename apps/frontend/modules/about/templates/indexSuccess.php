@@ -6,7 +6,7 @@
                 <div class="top-image" >
                     <div class="text"><span style="font-weight: bold;">JELVIX IS INNOVATIONAL FAST GROWING
                      COMPANY IN  SOFTWARE DEVELOPMENT
-                     PROVIDING     PROFESIONAL    SERVICES
+                     PROVIDING     PROFESSIONAL    SERVICES
                      AROUND  THE  WORLD.</span><br>
                      We  are  founded  in 2010  with  a  headquarters  in  Israel
                 and  Ukraine. Our  specialization is complex  sophisticated
@@ -23,7 +23,7 @@
                         <div class="one element">We deliver fully personalized approach standing back to back in
                             cooperation with our customers.</div>
                         <div class="two element">Quality control at all stages of project development.</div>
-                        <div class="three element">We bring our clients results, taking a bottom-line approach to each projectfocusing on the client's specific buisness and the beast ways to achievethem.</div>
+                        <div class="three element">We bring our clients results, taking a bottom-line approach to each project focusing on the client's specific business and the beast ways to achieve them.</div>
                         <div class="four element">We enjoy building long-term business relationships.</div>
                         <div class="five element">We sincerely believe in the advancement of technology and are always
                             pushing the envelope to influence change and design better  solutions.</div>
