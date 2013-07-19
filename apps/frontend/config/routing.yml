@@ -2,14 +2,14 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 jelvix_news:
-  url: /news
+  url: /blog
   class: sfDoctrineRouteCollection
   options:
     model: JelvixNews
     type: list
     actions: [show, list]
     module: news
-    prefix_path: /news
+    prefix_path: /blog
 
 jelvix_sevices:
   url: /services

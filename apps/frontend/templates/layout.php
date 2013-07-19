@@ -39,7 +39,7 @@
                         </li>
                         <li class="header-menu-list-element"><a
                                 href="<?php echo url_for('jelvix_stories') ?>">stories</a></li>
-                        <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_news') ?>">news</a>
+                        <li class="header-menu-list-element"><a href="<?php echo url_for('jelvix_news') ?>">blog</a>
                         </li>
                         <li class="header-menu-list-element"><a
                                 href="<?php echo url_for('jelvix_contacts_new') ?>">contacts</a></li>
@@ -76,7 +76,7 @@
                         <li>...</li>
                     </ul>
                     <ul class="footer-list">
-                        <li class="footer-item"><?php echo link_to('news', 'jelvix_news') ?></li>
+                        <li class="footer-item"><?php echo link_to('blog', 'jelvix_news') ?></li>
                         <li>..........</li>
                         <li>......</li>
                         <li>...</li>
