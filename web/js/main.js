@@ -72,7 +72,7 @@ function autoResizer()
 
 function checkCurrentProjectFilterElement() {
     var search = window.location.search;
-    var filters = ['', '?category=Applications', '?category=Design', '?category=Featured']
+    var filters = ['', '?category=Applications', '?category=Design', '?category=Web', '?category=Featured']
 
     $('.button').each(function (index, element) {
         if (window.location.pathname == '/projects') {
