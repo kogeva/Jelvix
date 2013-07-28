@@ -42,7 +42,7 @@
                                 </div>
                             </a>
                         <?php else: ?>
-                            <a class="active-page" href="/frontend_dev.php/news?page=<?php echo $page ?>">
+                            <a class="active-page" href="/frontend_dev.php/blog?page=<?php echo $page ?>">
                                 <div class="pagination-text-decorator">
                                     <?php echo $page ?>
                                 </div>
