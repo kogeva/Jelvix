@@ -44,7 +44,7 @@
                         <li class="entity-phone">
                             <img src="/images/contacts/phone.png" alt="" style="float: left"/>
 
-                            <div class="text">15672587XXX</div>
+                            <div class="text">380635385542</div>
                         </li>
                         <li class="entity-skype">
                             <img src="/images/contacts/skype.png" alt="" style="float: left"/>
@@ -69,7 +69,7 @@
                         <li class="entity-phone">
                             <img src="/images/contacts/phone.png" alt="" style="float: left"/>
 
-                            <div class="text">15672587XXX</div>
+                            <div class="text">380635385542</div>
                         </li>
                         <li class="entity-skype">
                             <img src="/images/contacts/skype.png" alt="" style="float: left"/>

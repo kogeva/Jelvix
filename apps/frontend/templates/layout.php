@@ -20,7 +20,7 @@
                 <span class="it-solutions">Outstanding IT solutions!</span>
 
                 <div class="header-request-container">
-                    <div class="request-phone-conteiner">1234567XXX</div>
+                    <div class="request-phone-conteiner">380635385542</div>
                     <div class="request-button-container">
                         <a class="request-button" href="<?php echo url_for('jelvix_request_new') ?>">
                             <span>Work with us</span>
@@ -94,7 +94,7 @@
                             <span class="request bottom">Request a quote</span>
                         </a>
                     </div>
-                    <div class="or-call-use">or call us 1234567XXX</div>
+                    <div class="or-call-use">or call us 380635385542</div>
                 </div>
                 <div class="copyriting-informations">
                     <ul>
